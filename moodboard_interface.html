@@ -1509,12 +1509,57 @@
         };
       }
 
+      function makePreviewFile(file) {
+        return new Promise(function(resolve) {
+          if (file.type.indexOf("image/") !== 0) {
+            resolve(file);
+            return;
+          }
+          var url = URL.createObjectURL(file);
+          var image = new Image();
+          image.onload = function() {
+            var maxSide = 900;
+            var sourceWidth = image.naturalWidth || image.width;
+            var sourceHeight = image.naturalHeight || image.height;
+            var scale = Math.min(1, maxSide / Math.max(sourceWidth, sourceHeight));
+            var canvas = document.createElement("canvas");
+            canvas.width = Math.max(1, Math.round(sourceWidth * scale));
+            canvas.height = Math.max(1, Math.round(sourceHeight * scale));
+            var context = canvas.getContext("2d");
+            context.drawImage(image, 0, 0, canvas.width, canvas.height);
+            URL.revokeObjectURL(url);
+            canvas.toBlob(function(blob) {
+              resolve(blob || file);
+            }, "image/jpeg", 0.72);
+          };
+          image.onerror = function() {
+            URL.revokeObjectURL(url);
+            resolve(file);
+          };
+          image.src = url;
+        });
+      }
+
+      function previewFilename(file) {
+        return file.name.replace(/\.[^.]+$/, "") + "_preview.jpg";
+      }
+
       function buildFormData() {
         var data = new FormData();
         data.append("params", JSON.stringify(collectParams()));
         files.forEach(function(file) {
           data.append("images", file, file.name);
         });
+        return data;
+      }
+
+      async function buildPreviewFormData() {
+        var data = new FormData();
+        data.append("params", JSON.stringify(collectParams()));
+        for (var index = 0; index < files.length; index += 1) {
+          var previewFile = await makePreviewFile(files[index]);
+          data.append("images", previewFile, previewFilename(files[index]));
+        }
         return data;
       }
 
@@ -1536,7 +1581,7 @@
         emptyPreview.hidden = false;
         previewPages.hidden = true;
         try {
-          var response = await fetch("/api/preview", { method: "POST", body: buildFormData(), signal: previewAbort.signal });
+          var response = await fetch("/api/preview", { method: "POST", body: await buildPreviewFormData(), signal: previewAbort.signal });
           if (!response.ok) {
             var errorPayload = await response.json().catch(function() { return {}; });
             throw new Error(errorPayload.error || "Preview error.");
