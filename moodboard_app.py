@@ -750,7 +750,7 @@ def page_to_png_bytes(page: Image.Image, preview: bool = False) -> bytes:
 
 def page_to_preview_bytes(page: Image.Image) -> bytes:
     buffer = io.BytesIO()
-    page.save(buffer, "PNG", compress_level=1)
+    page.save(buffer, "PNG", compress_level=0)
     return buffer.getvalue()
 
 
