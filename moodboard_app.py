@@ -904,7 +904,7 @@ class MoodboardHandler(BaseHTTPRequestHandler):
                 raise ValueError("Upload at least one image.")
 
             if self.path == "/api/preview":
-                pages, infos, images_per_page = render_pages(files, preview_params(params))
+                pages, infos, images_per_page = render_pages(files, params)
                 cleanup_preview_cache()
                 preview_id = uuid.uuid4().hex
                 preview_pages = [page_to_preview_bytes(page) for page in pages]
