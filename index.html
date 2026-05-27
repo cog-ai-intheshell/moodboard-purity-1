@@ -449,6 +449,50 @@
         opacity: 0.5;
       }
 
+      .download-modal {
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        display: grid;
+        place-items: center;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.62);
+      }
+
+      .download-modal[hidden] {
+        display: none !important;
+      }
+
+      .download-modal-panel {
+        width: min(420px, 100%);
+        padding: 18px;
+        color: var(--text);
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: var(--radius-card);
+        box-shadow: 0 18px 55px rgba(0, 0, 0, 0.24);
+      }
+
+      .download-modal-panel h2 {
+        margin: 0 0 8px;
+        font-size: 20px;
+        line-height: 1.15;
+      }
+
+      .download-modal-panel p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .download-modal-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 16px;
+      }
+
       .workspace {
         min-width: 0;
         height: 100vh;
@@ -1145,6 +1189,17 @@
       </main>
     </div>
 
+    <div class="download-modal" id="downloadNotice" role="dialog" aria-modal="true" aria-labelledby="downloadNoticeTitle" hidden>
+      <div class="download-modal-panel">
+        <h2 id="downloadNoticeTitle">Download access</h2>
+        <p>Downloads are part of the paid complete version. The full version will be online soon. In the meantime, contact me at augustin@knighter.io.</p>
+        <div class="download-modal-actions">
+          <a class="button primary" href="mailto:augustin@knighter.io">Contact Augustin</a>
+          <button class="button" id="downloadNoticeClose" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       var files = [];
       var objectUrls = [];
@@ -1153,6 +1208,7 @@
       var previewGeneration = 0;
       var customCells = [];
       var customRects = [];
+      var hostedOnline = !/^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/i.test(window.location.hostname);
       var defaultCustomRects = [
         { x: 0, y: 0, w: 2, h: 2 },
         { x: 0, y: 2, w: 1, h: 2 },
@@ -1195,6 +1251,8 @@
       var thumbGrid = document.getElementById("thumbGrid");
       var customGrid = document.getElementById("customGrid");
       var customGridPanel = document.getElementById("customGridPanel");
+      var downloadNotice = document.getElementById("downloadNotice");
+      var downloadNoticeClose = document.getElementById("downloadNoticeClose");
 
       function setStatus(message) {
         statusLine.textContent = message;
@@ -1581,7 +1639,8 @@
         emptyPreview.hidden = false;
         previewPages.hidden = true;
         try {
-          var response = await fetch("/api/preview", { method: "POST", body: await buildPreviewFormData(), signal: previewAbort.signal });
+          var previewBody = hostedOnline ? await buildPreviewFormData() : buildFormData();
+          var response = await fetch("/api/preview", { method: "POST", body: previewBody, signal: previewAbort.signal });
           if (!response.ok) {
             var errorPayload = await response.json().catch(function() { return {}; });
             throw new Error(errorPayload.error || "Preview error.");
@@ -1633,6 +1692,11 @@
       }
 
       async function requestExport() {
+        if (hostedOnline) {
+          downloadNotice.hidden = false;
+          setStatus("Download access opens soon.");
+          return;
+        }
         if (!ensureFiles()) return;
         setStatus("Generating export...");
         generateButton.disabled = true;
@@ -1726,6 +1790,14 @@
 
       dropZone.addEventListener("drop", function(event) {
         setFiles(event.dataTransfer.files || []);
+      });
+
+      downloadNoticeClose.addEventListener("click", function() {
+        downloadNotice.hidden = true;
+      });
+
+      downloadNotice.addEventListener("click", function(event) {
+        if (event.target === downloadNotice) downloadNotice.hidden = true;
       });
 
       generateButton.addEventListener("click", requestExport);
