@@ -1209,6 +1209,7 @@
       var customCells = [];
       var customRects = [];
       var hostedOnline = !/^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/i.test(window.location.hostname);
+      var freeImageLimit = 12;
       var defaultCustomRects = [
         { x: 0, y: 0, w: 2, h: 2 },
         { x: 0, y: 2, w: 1, h: 2 },
@@ -1386,6 +1387,9 @@
         document.getElementById("metricPages").textContent = String(pages);
         document.getElementById("metricPerPage").textContent = String(perPage);
         fileStatus.textContent = files.length ? files.length + " image(s) loaded." : "No images loaded.";
+        if (onlineFreeLimitExceeded()) {
+          fileStatus.textContent = files.length + " images loaded. Free version max: " + freeImageLimit + ".";
+        }
         updateChips();
       }
 
@@ -1400,6 +1404,24 @@
         previewPages.hidden = true;
         emptyPreview.textContent = "No pages generated.";
         emptyPreview.hidden = false;
+      }
+
+      function onlineFreeLimitExceeded() {
+        return hostedOnline && files.length > freeImageLimit;
+      }
+
+      function freeLimitMessage() {
+        return "Too many images for the free version. Use " + freeImageLimit + " images or fewer, or contact augustin@knighter.io for the complete version.";
+      }
+
+      function showOnlineFreeLimit() {
+        if (previewAbort) previewAbort.abort();
+        if (previewTimer) clearTimeout(previewTimer);
+        previewPages.innerHTML = "";
+        previewPages.hidden = true;
+        emptyPreview.textContent = freeLimitMessage();
+        emptyPreview.hidden = false;
+        setStatus("Too many images for the free version.");
       }
 
       function renderThumbs() {
@@ -1435,6 +1457,10 @@
         renderThumbs();
         updateMetrics();
         if (files.length) {
+          if (onlineFreeLimitExceeded()) {
+            showOnlineFreeLimit();
+            return;
+          }
           setStatus("Images ready.");
           schedulePreview(120);
         } else {
@@ -1448,6 +1474,10 @@
         renderThumbs();
         updateMetrics();
         if (files.length) {
+          if (onlineFreeLimitExceeded()) {
+            showOnlineFreeLimit();
+            return;
+          }
           schedulePreview(120);
           setStatus("Image removed.");
         } else {
@@ -1630,11 +1660,19 @@
         updateMetrics();
         if (previewTimer) clearTimeout(previewTimer);
         if (!files.length) return;
+        if (onlineFreeLimitExceeded()) {
+          showOnlineFreeLimit();
+          return;
+        }
         previewTimer = setTimeout(requestPreview, delay || 650);
       }
 
       async function requestPreview() {
         if (!files.length) return;
+        if (onlineFreeLimitExceeded()) {
+          showOnlineFreeLimit();
+          return;
+        }
         previewGeneration += 1;
         var generation = previewGeneration;
         if (previewAbort) previewAbort.abort();
