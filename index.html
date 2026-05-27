@@ -1192,7 +1192,7 @@
     <div class="download-modal" id="downloadNotice" role="dialog" aria-modal="true" aria-labelledby="downloadNoticeTitle" hidden>
       <div class="download-modal-panel">
         <h2 id="downloadNoticeTitle">Download access</h2>
-        <p>Downloads are part of the paid complete version. The full version will be online soon. In the meantime, contact me at augustin@knighter.io.</p>
+        <p>You are using the free online version, so previews are generated in low resolution. High-resolution downloads are part of the paid complete version, coming online soon. In the meantime, contact me at augustin@knighter.io.</p>
         <div class="download-modal-actions">
           <a class="button primary" href="mailto:augustin@knighter.io">Contact Augustin</a>
           <button class="button" id="downloadNoticeClose" type="button">Close</button>
@@ -1253,9 +1253,14 @@
       var customGridPanel = document.getElementById("customGridPanel");
       var downloadNotice = document.getElementById("downloadNotice");
       var downloadNoticeClose = document.getElementById("downloadNoticeClose");
+      var previewSubtitle = document.getElementById("previewSubtitle");
 
       function setStatus(message) {
         statusLine.textContent = message;
+      }
+
+      if (hostedOnline) {
+        previewSubtitle.textContent = "Low-resolution preview - free version";
       }
 
       function rectsToCells(rects) {
