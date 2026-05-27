@@ -178,6 +178,21 @@
         border-color: var(--blue);
       }
 
+      .upload-zone .upload-icon {
+        width: 28px;
+        height: 28px;
+        margin-bottom: 10px;
+        color: var(--primary);
+      }
+
+      .upload-zone .upload-icon * {
+        fill: none;
+        stroke: currentColor;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
       .upload-zone strong {
         display: block;
         margin-bottom: 4px;
@@ -992,6 +1007,13 @@
         <path d="M12 5v14"></path>
         <path d="M5 12h14"></path>
       </symbol>
+      <symbol id="icon-upload" viewBox="0 0 24 24">
+        <path d="M12 16V4"></path>
+        <path d="M7 9l5-5 5 5"></path>
+        <path d="M5 20h14"></path>
+        <path d="M5 20v-4"></path>
+        <path d="M19 20v-4"></path>
+      </symbol>
       <symbol id="icon-rotate" viewBox="0 0 24 24">
         <path d="M3 12a9 9 0 1 0 3-6.7"></path>
         <path d="M3 4v6h6"></path>
@@ -1037,8 +1059,9 @@
           <section class="control-section">
             <h2>Images</h2>
             <label class="upload-zone" id="dropZone" for="imageInput">
+              <svg class="upload-icon" aria-hidden="true"><use href="#icon-upload"></use></svg>
               <span>
-                <strong>Choose images</strong>
+                <strong>upload images</strong>
                 <span>JPG, PNG, WEBP, TIFF, BMP or GIF</span>
               </span>
             </label>
