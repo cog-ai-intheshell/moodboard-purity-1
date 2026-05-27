@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import io
 import json
 import sys
 from http.server import BaseHTTPRequestHandler
@@ -12,11 +13,11 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from moodboard_app import (  # noqa: E402
-    page_to_preview_bytes,
     parse_multipart_form,
     preview_params,
     render_pages,
     normalize_params,
+    RESAMPLE,
 )
 
 
@@ -46,9 +47,13 @@ class handler(BaseHTTPRequestHandler):
             pages, infos, images_per_page = render_pages(files, preview_params(normalize_params(raw_params)))
             encoded_pages = []
             for page in pages:
-                png = page_to_preview_bytes(page)
+                preview = page.copy()
+                preview.thumbnail((1000, 1000), RESAMPLE)
+                buffer = io.BytesIO()
+                preview.save(buffer, "JPEG", quality=76, optimize=True)
+                preview.close()
                 page.close()
-                encoded_pages.append("data:image/png;base64," + base64.b64encode(png).decode("ascii"))
+                encoded_pages.append("data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode("ascii"))
 
             self.send_json(
                 {

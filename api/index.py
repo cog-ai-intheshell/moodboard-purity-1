@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import base64
+import io
 import json
 import sys
 from http.server import BaseHTTPRequestHandler
@@ -15,10 +16,10 @@ if str(ROOT) not in sys.path:
 from moodboard_app import (  # noqa: E402
     build_export,
     normalize_params,
-    page_to_preview_bytes,
     parse_multipart_form,
     preview_params,
     render_pages,
+    RESAMPLE,
 )
 
 
@@ -54,6 +55,14 @@ class handler(BaseHTTPRequestHandler):
             if isinstance(decoded, dict):
                 params = decoded
         return normalize_params(params), files
+
+    def inline_preview_url(self, page: Any) -> str:
+        preview = page.copy()
+        preview.thumbnail((1000, 1000), RESAMPLE)
+        buffer = io.BytesIO()
+        preview.save(buffer, "JPEG", quality=76, optimize=True)
+        preview.close()
+        return "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode("ascii")
 
     def do_GET(self) -> None:  # noqa: N802 - Vercel handler API
         path = urlparse(self.path).path
@@ -92,9 +101,8 @@ class handler(BaseHTTPRequestHandler):
                 pages, infos, images_per_page = render_pages(files, preview_params(params))
                 encoded_pages = []
                 for page in pages:
-                    png = page_to_preview_bytes(page)
+                    encoded_pages.append(self.inline_preview_url(page))
                     page.close()
-                    encoded_pages.append("data:image/png;base64," + base64.b64encode(png).decode("ascii"))
                 self.send_json(
                     {
                         "pages": encoded_pages,
