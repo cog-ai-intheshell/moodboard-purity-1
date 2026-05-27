@@ -544,6 +544,27 @@
         font-size: 13px;
       }
 
+      .sim-header p.low-res-shimmer {
+        display: inline-block;
+        color: transparent;
+        background: linear-gradient(90deg, #8b8b8b 0%, #ffffff 46%, #8b8b8b 100%);
+        background-size: 220% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: low-res-sweep 1.8s linear infinite;
+      }
+
+      @keyframes low-res-sweep {
+        from {
+          background-position: 160% 0;
+        }
+
+        to {
+          background-position: -160% 0;
+        }
+      }
+
       .scene-frame {
         position: relative;
         min-height: 0;
@@ -880,6 +901,20 @@
 
       body.is-fullscreen-preview .sim-header p::after {
         content: " - press q to exit";
+      }
+
+      body.is-fullscreen-preview .sim-header p.low-res-shimmer::after {
+        color: var(--muted);
+        -webkit-text-fill-color: var(--muted);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .sim-header p.low-res-shimmer {
+          color: var(--muted);
+          background: none;
+          -webkit-text-fill-color: currentColor;
+          animation: none;
+        }
       }
 
       @media (max-width: 1040px) {
@@ -1262,6 +1297,7 @@
 
       if (hostedOnline) {
         previewSubtitle.textContent = "Low-resolution preview - free version";
+        previewSubtitle.classList.add("low-res-shimmer");
       }
 
       function rectsToCells(rects) {
