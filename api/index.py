@@ -38,6 +38,12 @@ class handler(BaseHTTPRequestHandler):
         self.end_headers()
         self.wfile.write(data)
 
+    def send_headers_only(self, content_type: str, content_length: int = 0, status: int = 200) -> None:
+        self.send_response(status)
+        self.send_header("Content-Type", content_type)
+        self.send_header("Content-Length", str(content_length))
+        self.end_headers()
+
     def read_payload(self) -> tuple[dict[str, Any], list[Any]]:
         content_type = self.headers.get("Content-Type", "")
         length = int(self.headers.get("Content-Length", "0") or "0")
@@ -61,6 +67,19 @@ class handler(BaseHTTPRequestHandler):
             self.send_bytes((ROOT / "docs" / "screenshot.png").read_bytes(), "image/png")
             return
         self.send_json({"error": "Not found."}, status=404)
+
+    def do_HEAD(self) -> None:  # noqa: N802 - Vercel handler API
+        path = urlparse(self.path).path
+        if path in {"/", "/index.html"}:
+            self.send_headers_only("text/html; charset=utf-8", (ROOT / "index.html").stat().st_size)
+            return
+        if path == "/moodboard_interface.html":
+            self.send_headers_only("text/html; charset=utf-8", (ROOT / "moodboard_interface.html").stat().st_size)
+            return
+        if path == "/docs/screenshot.png":
+            self.send_headers_only("image/png", (ROOT / "docs" / "screenshot.png").stat().st_size)
+            return
+        self.send_headers_only("application/json; charset=utf-8", status=404)
 
     def do_POST(self) -> None:  # noqa: N802 - Vercel handler API
         try:
