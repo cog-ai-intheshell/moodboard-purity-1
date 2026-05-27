@@ -41,7 +41,7 @@ from PIL import Image, ImageDraw, ImageOps, ImageStat
 
 
 BASE_DIR = Path(__file__).resolve().parent
-HTML_PATH = BASE_DIR / "moodboard_interface.html"
+HTML_PATH = BASE_DIR / "index.html"
 PREVIEW_CACHE: dict[str, dict[str, Any]] = {}
 PREVIEW_TTL_SECONDS = 20 * 60
 PREVIEW_MAX_DIMENSION = 1400
@@ -869,9 +869,9 @@ class MoodboardHandler(BaseHTTPRequestHandler):
         self.send_bytes(data, "application/json; charset=utf-8", status=status)
 
     def do_GET(self) -> None:  # noqa: N802 - required by BaseHTTPRequestHandler
-        if self.path in {"/", "/index.html", "/moodboard_interface.html"}:
+        if self.path in {"/", "/index.html"}:
             if not HTML_PATH.exists():
-                self.send_json({"error": "moodboard_interface.html is missing."}, status=500)
+                self.send_json({"error": "index.html is missing."}, status=500)
                 return
             self.send_bytes(HTML_PATH.read_bytes(), "text/html; charset=utf-8")
             return

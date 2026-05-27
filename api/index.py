@@ -69,9 +69,6 @@ class handler(BaseHTTPRequestHandler):
         if path in {"/", "/index.html"}:
             self.send_bytes((ROOT / "index.html").read_bytes(), "text/html; charset=utf-8")
             return
-        if path == "/moodboard_interface.html":
-            self.send_bytes((ROOT / "moodboard_interface.html").read_bytes(), "text/html; charset=utf-8")
-            return
         if path == "/docs/screenshot.png":
             self.send_bytes((ROOT / "docs" / "screenshot.png").read_bytes(), "image/png")
             return
@@ -81,9 +78,6 @@ class handler(BaseHTTPRequestHandler):
         path = urlparse(self.path).path
         if path in {"/", "/index.html"}:
             self.send_headers_only("text/html; charset=utf-8", (ROOT / "index.html").stat().st_size)
-            return
-        if path == "/moodboard_interface.html":
-            self.send_headers_only("text/html; charset=utf-8", (ROOT / "moodboard_interface.html").stat().st_size)
             return
         if path == "/docs/screenshot.png":
             self.send_headers_only("image/png", (ROOT / "docs" / "screenshot.png").stat().st_size)
