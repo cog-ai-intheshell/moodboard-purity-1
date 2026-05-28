@@ -1,0 +1,5 @@
+analysis_depth: deep
+caption_backend: florence2
+use_owlv2: true
+layout_projection: umap
+target_latency: offline_quality

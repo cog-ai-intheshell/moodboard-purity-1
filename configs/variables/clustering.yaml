@@ -1,0 +1,4 @@
+preferred_algorithm: hdbscan
+fallback_algorithm: kmeans
+min_cluster_size: 2
+outlier_label: -1

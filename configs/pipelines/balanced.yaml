@@ -1,0 +1,5 @@
+analysis_depth: balanced
+caption_backend: hybrid
+use_owlv2: false
+layout_projection: umap_when_useful
+target_latency: standard

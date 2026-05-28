@@ -1,0 +1,27 @@
+# Python/runtime
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Local environment
+.venv/
+.env
+.env.*
+
+# macOS/editor noise
+.DS_Store
+*.swp
+*.swo
+
+# Large local model/data caches
+data/huggingface/
+datasets/
+dataset-test-*/
+
+# Generated exports and temporary artifacts
+exports/
+tmp/
+*.log
+

@@ -1,0 +1,6 @@
+id: google/siglip2-base-patch16-224
+role: multimodal image/text embeddings
+required: true
+batch_size: 8
+offline: true
+cache: data/huggingface

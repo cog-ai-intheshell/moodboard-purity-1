@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "aesthetic-world-sample-v1",
+  "updated": "2026-05-27",
+  "commonSampleSchema": {
+    "sample_id": "string",
+    "asset_ref": {
+      "kind": "local_path | remote_url | hash_only",
+      "value": "string",
+      "redistribution": "allowed | metadata_only | forbidden | unknown"
+    },
+    "dataset_origin": "string",
+    "license_policy": "string",
+    "safety": {
+      "rating": "safe | sensitive | nsfw | unknown",
+      "notes": "string"
+    },
+    "raw_metadata": {},
+    "palette": [
+      {
+        "hex": "#RRGGBB",
+        "name": "string",
+        "weight": 0.0,
+        "role": "dominant | secondary | accent"
+      }
+    ],
+    "modalities": {
+      "objects": [],
+      "symbols": [],
+      "textures": [],
+      "style_tags": [],
+      "emotion_tags": [],
+      "composition": []
+    },
+    "embeddings": {
+      "visual": [],
+      "objects": [],
+      "colors": [],
+      "symbols": [],
+      "textures": [],
+      "styles": [],
+      "emotions": [],
+      "composition": [],
+      "unified_aesthetic": []
+    },
+    "aesthetic_score": null,
+    "neighbors": [],
+    "relations": [
+      {
+        "target_id": "string",
+        "type": "co_occurrence | embedding_proximity | color_harmony | aesthetic_compatibility | symbolic_similarity",
+        "weight": 0.0
+      }
+    ]
+  },
+  "datasets": [
+    {
+      "id": "laion-5b",
+      "name": "LAION-5B / Re-LAION-5B",
+      "status": "sample_and_filter_only",
+      "assetPolicy": "metadata_only_until_license_filtering",
+      "bestFor": ["general vision-language pretraining", "negative sampling", "large-scale retrieval"],
+      "risks": ["very large scale", "noisy captions", "license and safety filtering required"],
+      "modalities": ["visual", "caption", "style_tags", "objects"],
+      "priority": 5
+    },
+    {
+      "id": "laion-aesthetics",
+      "name": "LAION-Aesthetics",
+      "status": "recommended_for_scoring_head",
+      "assetPolicy": "metadata_only_until_license_filtering",
+      "bestFor": ["aesthetic score regression", "ranking", "contrastive preference pairs"],
+      "risks": ["aesthetic score is a model proxy, not human ground truth"],
+      "modalities": ["visual", "caption", "aesthetic_score"],
+      "priority": 2
+    },
+    {
+      "id": "bam",
+      "name": "BAM! Behance Artistic Media Dataset",
+      "status": "recommended_for_style_symbol_taxonomy",
+      "assetPolicy": "check_original_dataset_terms",
+      "bestFor": ["professional art direction", "media classification", "style tags", "emotion tags"],
+      "risks": ["domain bias toward Behance portfolios"],
+      "modalities": ["style_tags", "objects", "emotion_tags", "composition"],
+      "priority": 2
+    },
+    {
+      "id": "baid",
+      "name": "BoldBrush Artistic Image Dataset",
+      "status": "recommended_for_art_aesthetic_quality",
+      "assetPolicy": "check_original_dataset_terms",
+      "bestFor": ["painting aesthetics", "texture", "composition", "art quality scoring"],
+      "risks": ["fine art bias"],
+      "modalities": ["visual", "textures", "composition", "aesthetic_score"],
+      "priority": 1
+    },
+    {
+      "id": "ava",
+      "name": "AVA Aesthetic Visual Analysis Dataset",
+      "status": "recommended_for_human_aesthetic_scores",
+      "assetPolicy": "check_original_dataset_terms",
+      "bestFor": ["human aesthetic score distribution", "composition", "photo quality"],
+      "risks": ["photography bias"],
+      "modalities": ["visual", "composition", "aesthetic_score", "emotion_tags"],
+      "priority": 1
+    },
+    {
+      "id": "polyvore",
+      "name": "Polyvore Outfits Dataset",
+      "status": "recommended_for_compatibility_model",
+      "assetPolicy": "check_original_dataset_terms",
+      "bestFor": ["aesthetic compatibility", "color harmony", "style co-presence"],
+      "risks": ["fashion-specific domain"],
+      "modalities": ["objects", "colors", "style_tags", "relations"],
+      "priority": 3
+    },
+    {
+      "id": "danbooru",
+      "name": "Danbooru",
+      "status": "safe_subset_only",
+      "assetPolicy": "metadata_first_safe_rating_filter_required",
+      "bestFor": ["granular tags", "symbols", "objects", "style taxonomy"],
+      "risks": ["NSFW filtering required", "anime and fan-art bias", "IP sensitivity"],
+      "modalities": ["objects", "symbols", "style_tags", "composition"],
+      "priority": 3
+    }
+  ],
+  "trainingRoadmap": [
+    {
+      "stage": "MVP",
+      "action": "Build local multimodal observations from SigLIP2 + Florence-2 + palette analysis, then store records in the common schema."
+    },
+    {
+      "stage": "Data factory",
+      "action": "Create adapters per dataset, normalize metadata into commonSampleSchema, and keep assets metadata-only until each license path is validated."
+    },
+    {
+      "stage": "Specialist heads",
+      "action": "Train or fine-tune modality-specific heads for objects, symbols, textures, style, composition, affect and aesthetic score."
+    },
+    {
+      "stage": "Fusion encoder",
+      "action": "Train unified_aesthetic embeddings with contrastive image-text loss, graph-neighborhood positives, compatibility pairs and outlier negatives."
+    },
+    {
+      "stage": "World model",
+      "action": "Persist embeddings and graph relations in a vector database plus graph store, then learn trend, mutation and cluster-evolution dynamics."
+    }
+  ]
+}

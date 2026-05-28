@@ -1,0 +1,32 @@
+{
+  "version": "fusion-calibrator-v1",
+  "analysisModelVersion": "mvp-lite-world-model-enriched-samples-v18",
+  "updated": 1779918509.456068,
+  "method": "stable expert-prior weights plus supervised local world-classifier diagnostics",
+  "weights": {
+    "visual": 0.45045,
+    "color": 0.108108,
+    "object": 0.09009,
+    "symbol": 0.09009,
+    "style": 0.072072,
+    "emotion": 0.045045,
+    "affect": 0.045045,
+    "composition": 0.036036,
+    "texture": 0.036036,
+    "tag": 0.027027
+  },
+  "trainingData": {
+    "worldMoodClassifier": "data/trained_models/world_mood_classifier_v1.json",
+    "classCount": 2,
+    "sampleCount": 30,
+    "separation": 0.40771,
+    "meanIntraSimilarity": 0.65285,
+    "meanInterSimilarity": 0.83743
+  },
+  "notes": [
+    "Loaded by the app at analysis time.",
+    "The app does not retrain this artifact at startup.",
+    "Fusion weights stay conservative until large external datasets provide enough labeled modalities.",
+    "The mood classifier is trained once from the normalized sample index and loaded directly by the app."
+  ]
+}

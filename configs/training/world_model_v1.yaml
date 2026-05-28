@@ -1,0 +1,9 @@
+schema: aesthetic-world-sample-v1
+splits:
+  train: datasets/splits/D_world-learning
+  dev: datasets/splits/D_dev
+  calib: datasets/splits/D_calib
+  test: datasets/splits/D_test
+  guard: datasets/splits/D_guard
+objective: masked_modality_prediction
+regularization: gaussian_latent_regularization

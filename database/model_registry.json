@@ -1,0 +1,83 @@
+{
+  "version": "mvp-lite-world-model-harmony-v23",
+  "updated": "2026-05-28",
+  "policy": {
+    "runtime": "local first; TRANSFORMERS_OFFLINE is enabled by default",
+    "fallback": "missing optional models must report status and fall back without blocking analysis",
+    "assets": "no third-party dataset images are redistributed"
+  },
+  "trainedArtifacts": {
+    "aestheticIndex": "data/trained_models/aesthetic_text_index_v1.json",
+    "fusionCalibrator": "data/trained_models/fusion_calibrator_v1.json",
+    "worldSampleIndex": "data/trained_models/world_sample_index_v1.json",
+    "worldMoodClassifier": "data/trained_models/world_mood_classifier_v1.json",
+    "sampleSource": "database/world_samples/local_moodboards.jsonl",
+    "ingestionCommand": "MOODBOARD_CAPTION_BACKEND=fast .venv/bin/python world_learning/data_factory.py dataset-test-1 dataset-test-2 --output database/world_samples/local_moodboards.jsonl --enrich-ai --analysis-depth fast --enrichment-batch-size 4",
+    "trainingCommand": ".venv/bin/python world_learning/train_world_model.py --batch-size 96 --sample-batch-size 4 --samples-jsonl database/world_samples/local_moodboards.jsonl",
+    "runtimePolicy": "The app loads these files and does not retrain them at startup."
+  },
+  "models": [
+    {
+      "id": "google/siglip2-base-patch16-224",
+      "role": "main multimodal embedding model for images, text, zero-shot concepts, aesthetics and fusion",
+      "status": "active",
+      "localRequired": true,
+      "source": "https://huggingface.co/google/siglip2-base-patch16-224"
+    },
+    {
+      "id": "microsoft/Florence-2-base",
+      "role": "captioning, object detection and dense region captions",
+      "status": "active",
+      "localRequired": true,
+      "source": "https://huggingface.co/microsoft/Florence-2-base"
+    },
+    {
+      "id": "HuggingFaceTB/SmolVLM2-256M-Video-Instruct",
+      "role": "optional fast captioning backend for fast analysis depth",
+      "status": "downloaded-optional-active",
+      "localRequired": false,
+      "env": "MOODBOARD_CAPTION_BACKEND=auto|fast|hybrid",
+      "source": "https://huggingface.co/docs/transformers/model_doc/smolvlm"
+    },
+    {
+      "id": "Qwen/Qwen2.5-VL-3B-Instruct",
+      "role": "future higher-quality local semantic VLM for deeper concept extraction",
+      "status": "recommended-next-heavy",
+      "localRequired": false,
+      "source": "https://huggingface.co/Qwen/Qwen2.5-VL-3B-Instruct"
+    },
+    {
+      "id": "google/owlv2-base-patch16-ensemble",
+      "role": "future open-vocabulary local object and symbol grounding",
+      "status": "downloaded-optional-active",
+      "localRequired": false,
+      "source": "https://huggingface.co/google/owlv2-base-patch16-ensemble"
+    },
+    {
+      "id": "facebook/dinov2-base",
+      "role": "future style, silhouette and visual retrieval backbone beyond language alignment",
+      "status": "downloaded-optional-ready",
+      "localRequired": false,
+      "source": "https://huggingface.co/facebook/dinov2-base"
+    },
+    {
+      "id": "facebook/sam2-hiera-small",
+      "role": "future segmentation, masks and silhouette geometry",
+      "status": "downloaded-optional-ready",
+      "localRequired": false,
+      "source": "https://huggingface.co/facebook/sam2-hiera-small"
+    }
+  ],
+  "modalities": {
+    "image": ["google/siglip2-base-patch16-224"],
+    "color": ["local LAB/HSV palette extractor", "database/color_names.json nearest LAB naming", "google/siglip2-base-patch16-224 text embeddings"],
+    "object": ["microsoft/Florence-2-base", "google/owlv2-base-patch16-ensemble"],
+    "symbol": ["microsoft/Florence-2-base", "google/owlv2-base-patch16-ensemble", "google/siglip2-base-patch16-224"],
+    "texture": ["microsoft/Florence-2-base", "google/siglip2-base-patch16-224"],
+    "style": ["google/siglip2-base-patch16-224", "facebook/dinov2-base"],
+    "emotion": ["google/siglip2-base-patch16-224 corpus affect retrieval"],
+    "affect": ["google/siglip2-base-patch16-224 corpus symbolic-affect retrieval"],
+    "attention": ["google/siglip2-base-patch16-224 patch-token salience signature"],
+    "composition": ["local density/orientation metrics", "microsoft/Florence-2-base captions", "future SAM2/DINOv2 geometry"]
+  }
+}

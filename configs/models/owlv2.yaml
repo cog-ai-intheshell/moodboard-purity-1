@@ -1,0 +1,4 @@
+id: google/owlv2-base-patch16-ensemble
+role: open-vocabulary object and symbol grounding
+required: false
+enabled_by_env: MOODBOARD_ENABLE_OWLV2

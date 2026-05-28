@@ -1,0 +1,13 @@
+id: local/aesthetic-fusion-encoder-v1
+role: unified aesthetic embedding and compatibility energy
+artifact: data/trained_models/fusion_calibrator_v1.json
+training_phase: future_finetune
+inputs:
+  - visual
+  - colors
+  - objects
+  - symbols
+  - textures
+  - styles
+  - affect
+  - composition

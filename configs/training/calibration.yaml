@@ -1,0 +1,6 @@
+calibration_split: datasets/splits/D_calib
+guard_split: datasets/splits/D_guard
+calibrate:
+  - purity_thresholds
+  - outlier_thresholds
+  - spectral_regime_thresholds

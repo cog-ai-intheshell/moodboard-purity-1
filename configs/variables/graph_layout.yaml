@@ -1,0 +1,4 @@
+node_size_range: [4, 18]
+edge_width_range: [0.6, 3.0]
+distance_model: projected_embedding_distance
+cluster_coloring: true

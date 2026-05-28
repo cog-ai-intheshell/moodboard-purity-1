@@ -1,0 +1,4 @@
+source_of_truth: spectral_and_cluster_consensus
+min_score: 0.0
+max_score: 1.0
+display_as_percent: true

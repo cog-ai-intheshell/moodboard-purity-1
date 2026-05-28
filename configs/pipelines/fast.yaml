@@ -1,0 +1,5 @@
+analysis_depth: fast
+caption_backend: smolvlm
+use_owlv2: false
+layout_projection: pca_or_mds
+target_latency: interactive

@@ -1,0 +1,6 @@
+id: HuggingFaceTB/SmolVLM2-256M-Video-Instruct
+role: fast captioning backend
+required: false
+enabled_for:
+  - fast
+  - balanced

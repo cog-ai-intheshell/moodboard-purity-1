@@ -1,0 +1,4 @@
+database: database/color_names.json
+distance: cielab
+dedupe_by_canonical_name: true
+include_all_palette_nodes: true

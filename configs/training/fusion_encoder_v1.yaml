@@ -1,0 +1,13 @@
+inputs:
+  - visual
+  - colors
+  - objects
+  - symbols
+  - textures
+  - styles
+  - affect
+  - composition
+losses:
+  - contrastive_neighbors
+  - masked_modality_prediction
+  - compatibility_energy

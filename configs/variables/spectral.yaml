@@ -1,0 +1,4 @@
+laplacian: combinatorial
+harmonicity_entropy_epsilon: 1.0e-9
+regime_peak_threshold: 0.12
+target_harmony: 0.88

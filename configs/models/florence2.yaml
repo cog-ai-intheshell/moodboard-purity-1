@@ -1,0 +1,6 @@
+id: microsoft/Florence-2-base
+role: captions, dense regions, object hints
+required: true
+caption_limit: 24
+offline: true
+cache: data/huggingface

@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bento Moodboard Generator</title>
+    <link rel="stylesheet" href="/static/css/moodboard.css">
+  </head>
+  <body data-theme="dark">
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-trash" viewBox="0 0 24 24">
+        <path d="M3 6h18"></path>
+        <path d="M8 6V4h8v2"></path>
+        <path d="M6 6l1 15h10l1-15"></path>
+        <path d="M10 11v6"></path>
+        <path d="M14 11v6"></path>
+      </symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="4"></circle>
+        <path d="M12 2v2"></path>
+        <path d="M12 20v2"></path>
+        <path d="M4.93 4.93l1.41 1.41"></path>
+        <path d="M17.66 17.66l1.41 1.41"></path>
+        <path d="M2 12h2"></path>
+        <path d="M20 12h2"></path>
+        <path d="M6.34 17.66l-1.41 1.41"></path>
+        <path d="M19.07 4.93l-1.41 1.41"></path>
+      </symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24">
+        <path d="M20 14.4A7.8 7.8 0 0 1 9.6 4a8.7 8.7 0 1 0 10.4 10.4z"></path>
+      </symbol>
+      <symbol id="icon-plus" viewBox="0 0 24 24">
+        <path d="M12 5v14"></path>
+        <path d="M5 12h14"></path>
+      </symbol>
+      <symbol id="icon-close" viewBox="0 0 24 24">
+        <path d="M18 6L6 18"></path>
+        <path d="M6 6l12 12"></path>
+      </symbol>
+      <symbol id="icon-upload" viewBox="0 0 24 24">
+        <path d="M12 16V4"></path>
+        <path d="M7 9l5-5 5 5"></path>
+        <path d="M5 20h14"></path>
+        <path d="M5 20v-4"></path>
+        <path d="M19 20v-4"></path>
+      </symbol>
+      <symbol id="icon-rotate" viewBox="0 0 24 24">
+        <path d="M3 12a9 9 0 1 0 3-6.7"></path>
+        <path d="M3 4v6h6"></path>
+      </symbol>
+      <symbol id="icon-dice" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="16" height="16" rx="3"></rect>
+        <path d="M8.5 8.5h.01"></path>
+        <path d="M15.5 8.5h.01"></path>
+        <path d="M12 12h.01"></path>
+        <path d="M8.5 15.5h.01"></path>
+        <path d="M15.5 15.5h.01"></path>
+      </symbol>
+      <symbol id="icon-download" viewBox="0 0 24 24">
+        <path d="M12 3v12"></path>
+        <path d="M7 10l5 5 5-5"></path>
+        <path d="M5 21h14"></path>
+      </symbol>
+      <symbol id="icon-fullscreen" viewBox="0 0 24 24">
+        <path d="M4 4h6"></path>
+        <path d="M4 4v6"></path>
+        <path d="M20 4h-6"></path>
+        <path d="M20 4v6"></path>
+        <path d="M4 20h6"></path>
+        <path d="M4 20v-6"></path>
+        <path d="M20 20h-6"></path>
+        <path d="M20 20v-6"></path>
+      </symbol>
+      <symbol id="icon-minimize" viewBox="0 0 24 24">
+        <path d="M9 4v5H4"></path>
+        <path d="M15 4v5h5"></path>
+        <path d="M9 20v-5H4"></path>
+        <path d="M15 20v-5h5"></path>
+      </symbol>
+      <symbol id="icon-grid-view" viewBox="0 0 24 24">
+        <rect x="4" y="4" width="6" height="6" rx="1"></rect>
+        <rect x="14" y="4" width="6" height="6" rx="1"></rect>
+        <rect x="4" y="14" width="6" height="6" rx="1"></rect>
+        <rect x="14" y="14" width="6" height="6" rx="1"></rect>
+      </symbol>
+      <symbol id="icon-graph-view" viewBox="0 0 24 24">
+        <circle cx="6" cy="12" r="2.5"></circle>
+        <circle cx="17" cy="6" r="2.5"></circle>
+        <circle cx="18" cy="18" r="2.5"></circle>
+        <path d="M8.3 10.8l6.4-3.5"></path>
+        <path d="M8.4 13.1l7.2 3.7"></path>
+        <path d="M17.4 8.5l.4 7"></path>
+      </symbol>
+    </svg>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Control panel">
+        <div class="sidebar-inner">
+          <header class="brand">
+            <h1>Bento Moodboard</h1>
+            <p>Grid, auto, simple. PDF and PNG.</p>
+            <div class="view-switch" aria-label="Workspace view">
+              <button class="button is-active" id="bentoViewButton" type="button" aria-pressed="true" title="Bento">
+                <svg aria-hidden="true"><use href="#icon-grid-view"></use></svg>
+                Bento
+              </button>
+              <button class="button" id="graphViewButton" type="button" aria-pressed="false" title="Graph">
+                <svg aria-hidden="true"><use href="#icon-graph-view"></use></svg>
+                Graph
+              </button>
+            </div>
+          </header>
+
+          <section class="control-section graph-nav-section">
+            <h2>Images</h2>
+            <label class="upload-zone" id="dropZone" for="imageInput">
+              <svg class="upload-icon" aria-hidden="true"><use href="#icon-upload"></use></svg>
+              <span>
+                <strong>upload images</strong>
+                <span>JPG, PNG, WEBP, TIFF, BMP or GIF</span>
+              </span>
+            </label>
+            <input class="file-input" id="imageInput" type="file" accept="image/*" multiple>
+            <div class="button-row">
+              <button class="button icon-only" id="clearButton" type="button" aria-label="Clear selection" title="Clear selection">
+                <svg aria-hidden="true"><use href="#icon-trash"></use></svg>
+              </button>
+            </div>
+            <div class="status-line" id="fileStatus">No images loaded.</div>
+          </section>
+
+          <section class="control-section graph-selection-panel graph-nav-section" id="graphSelectionPanel">
+            <h2>Selection</h2>
+            <div class="thumb-grid nav-thumb-grid" id="thumbGridNav"></div>
+          </section>
+
+          <section class="control-section">
+            <h2>Layout</h2>
+            <label class="select-field" for="layoutMode">
+              <span>Mode</span>
+              <select id="layoutMode">
+                <option value="grid" selected>Bento grid hero</option>
+                <option value="random">Bento random</option>
+                <option value="custom">Bento custom</option>
+                <option value="auto">Organic bento</option>
+                <option value="simple">Simple grid</option>
+              </select>
+            </label>
+            <div class="custom-grid-panel" id="customGridPanel">
+              <div class="custom-toolbar">
+                <span id="customGridCount">12 blocks</span>
+                <div class="custom-actions">
+                  <button class="button icon-only" id="randomCustomGrid" type="button" aria-label="Random grid" title="Random grid">
+                    <svg aria-hidden="true"><use href="#icon-dice"></use></svg>
+                  </button>
+                  <button class="button icon-only" id="resetCustomGrid" type="button" aria-label="Reset grid" title="Reset grid">
+                    <svg aria-hidden="true"><use href="#icon-rotate"></use></svg>
+                  </button>
+                </div>
+              </div>
+              <div class="custom-grid" id="customGrid"></div>
+            </div>
+            <label class="toggle-field" for="bentoOptimizer">
+              <span>Bento optimizer</span>
+              <input id="bentoOptimizer" type="checkbox">
+            </label>
+            <label class="select-field" for="bentoOptimizerMode">
+              <span>Optimization</span>
+              <select id="bentoOptimizerMode">
+                <option value="balanced" selected>Balanced</option>
+                <option value="editorial">Editorial</option>
+                <option value="dense">Dense</option>
+                <option value="clustered">Clustered</option>
+              </select>
+            </label>
+            <label class="slider-field" for="imagesPerPage">
+              <span>Images per page</span>
+              <output id="imagesPerPageValue">12</output>
+              <input id="imagesPerPage" type="range" min="1" max="30" step="1" value="12">
+            </label>
+            <label class="select-field" for="pagePreset">
+              <span>Format</span>
+              <select id="pagePreset">
+                <option value="a4_landscape" selected>A4 landscape</option>
+                <option value="a4_portrait">A4 portrait</option>
+                <option value="screen_16_9">16:9 landscape</option>
+                <option value="iphone">iPhone</option>
+                <option value="custom">Custom</option>
+              </select>
+            </label>
+            <div class="number-row">
+              <label>Width<input class="field" id="pageWidth" type="number" min="320" max="6000" value="3508" disabled></label>
+              <label>Height<input class="field" id="pageHeight" type="number" min="320" max="6000" value="2480" disabled></label>
+            </div>
+          </section>
+
+          <section class="control-section">
+            <h2>Composition</h2>
+            <label class="slider-field" for="margin">
+              <span>Outer margin</span>
+              <output id="marginValue">30</output>
+              <input id="margin" type="range" min="0" max="260" step="5" value="30">
+            </label>
+            <label class="slider-field" for="gap">
+              <span>Gutter</span>
+              <output id="gapValue">30</output>
+              <input id="gap" type="range" min="0" max="180" step="5" value="30">
+            </label>
+            <label class="slider-field" for="borderRadius">
+              <span>Corner radius</span>
+              <output id="borderRadiusValue">20</output>
+              <input id="borderRadius" type="range" min="0" max="120" step="2" value="20">
+            </label>
+            <label class="toggle-field" for="fillBlocks">
+              <span>Fill blocks</span>
+              <input id="fillBlocks" type="checkbox" checked>
+            </label>
+            <div class="color-row">
+              <label>Background color<input class="field" id="backgroundText" type="text" value="#0f0f0f"></label>
+              <input id="backgroundColor" type="color" value="#0f0f0f" aria-label="Background color">
+            </div>
+          </section>
+
+          <section class="control-section graph-nav-section graph-analysis-depth-section">
+            <h2 class="visual-sorting-title">Visual sorting</h2>
+            <h2 class="graph-depth-title">Analysis depth</h2>
+            <label class="toggle-field" for="useColorGradient">
+              <span>Color gradient</span>
+              <input id="useColorGradient" type="checkbox" checked>
+            </label>
+            <label class="select-field" for="gradientMode">
+              <span>Gradient mode</span>
+              <select id="gradientMode">
+                <option value="accent" selected>Dominant accent</option>
+                <option value="default">Hue + light</option>
+                <option value="hue_buckets">Darks / colors / grays</option>
+                <option value="dark_to_light">Dark to light</option>
+                <option value="light_to_dark">Light to dark</option>
+                <option value="contrast">Contrast</option>
+                <option value="hero">Hero score</option>
+              </select>
+            </label>
+            <label class="slider-field" for="orientationThreshold">
+              <span>Orientation threshold</span>
+              <output id="orientationThresholdValue">1.20</output>
+              <input id="orientationThreshold" type="range" min="1.01" max="2.5" step="0.01" value="1.2">
+            </label>
+            <label class="select-field graph-depth-control" for="analysisDepth">
+              <span>Analysis depth</span>
+              <select id="analysisDepth">
+                <option value="balanced" selected>Balanced</option>
+                <option value="fast">Fast</option>
+                <option value="deep">Deep</option>
+              </select>
+            </label>
+          </section>
+
+          <section class="control-section">
+            <h2>Export</h2>
+            <label class="toggle-field" for="formatPdf">
+              <span>PDF</span>
+              <input id="formatPdf" name="format" type="checkbox" value="pdf" checked>
+            </label>
+            <label class="toggle-field" for="formatPng">
+              <span>PNG</span>
+              <input id="formatPng" name="format" type="checkbox" value="png">
+            </label>
+            <div class="button-row">
+              <button class="button primary" id="generateButton" type="button">
+                <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+                Download
+              </button>
+            </div>
+            <div class="status-line" id="statusLine">Ready.</div>
+          </section>
+        </div>
+      </aside>
+
+      <main class="workspace">
+        <div class="workspace-view" id="bentoView">
+          <section class="simulation-card" aria-label="Moodboard preview">
+            <header class="sim-header">
+              <div class="header-actions">
+                <button class="button icon-only" id="fullscreenPreview" type="button" aria-pressed="false" aria-label="Open preview fullscreen" title="Fullscreen">
+                  <svg aria-hidden="true"><use id="fullscreenIcon" href="#icon-fullscreen"></use></svg>
+                </button>
+                <button class="button icon-only" id="themeToggle" type="button" aria-pressed="true" aria-label="Change theme" title="Change theme">
+                  <svg aria-hidden="true"><use id="themeIcon" href="#icon-sun"></use></svg>
+                </button>
+              </div>
+              <h2 id="previewTitle">Preview</h2>
+              <p id="previewSubtitle">PNG preview</p>
+            </header>
+            <div class="scene-frame">
+              <div class="empty-preview" id="emptyPreview">No pages generated.</div>
+              <div class="preview-pages" id="previewPages" hidden></div>
+              <div class="canvas-overlay">
+                <span class="chip" id="modeChip">grid</span>
+                <span class="chip" id="formatChip">A4 landscape</span>
+                <span class="chip" id="countChip">0 images</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="bottom-grid">
+            <article class="data-card selection-card">
+              <h2>Selection</h2>
+              <div class="metrics-grid">
+                <div class="metric"><span>Images</span><strong id="metricImages">0</strong></div>
+                <div class="metric"><span>Pages</span><strong id="metricPages">0</strong></div>
+                <div class="metric"><span>Per page</span><strong id="metricPerPage">12</strong></div>
+              </div>
+              <div class="thumb-grid" id="thumbGrid"></div>
+            </article>
+
+            <article class="data-card">
+              <h2>Moodboard profile</h2>
+              <div class="profile-panel">
+                <div class="profile-score">
+                  <span>Purity score</span>
+                  <strong id="profilePurity">-</strong>
+                </div>
+                <div class="palette-strip" id="profilePalette" aria-label="Primary colors"></div>
+                <div class="profile-gradient" id="profileGradient" aria-label="Generated color gradient"></div>
+                <div class="color-analysis" id="profileColorAnalysis"></div>
+              </div>
+              <div class="status-line" id="analysisStatus" hidden></div>
+            </article>
+          </section>
+        </div>
+
+        <div class="workspace-view" id="graphView" hidden>
+          <section class="simulation-card" aria-label="Moodboard graph">
+            <header class="sim-header">
+              <div class="header-actions">
+                <button class="button icon-only" id="resetGraphView" type="button" aria-label="Reset graph camera" title="Reset camera">
+                  <svg aria-hidden="true"><use href="#icon-rotate"></use></svg>
+                </button>
+                <button class="button icon-only" id="fullscreenGraph" type="button" aria-pressed="false" aria-label="Open graph fullscreen" title="Fullscreen">
+                  <svg aria-hidden="true"><use id="fullscreenGraphIcon" href="#icon-fullscreen"></use></svg>
+                </button>
+                <button class="button icon-only" id="exportGraphPng" type="button" aria-label="Export graph PNG" title="Export PNG">
+                  <svg aria-hidden="true"><use href="#icon-download"></use></svg>
+                </button>
+                <button class="button icon-only" id="exportGraphJson" type="button" aria-label="Export graph JSON" title="Export JSON">
+                  <svg aria-hidden="true"><use href="#icon-graph-view"></use></svg>
+                </button>
+              </div>
+              <h2 id="graphTitle">Cognitive graph</h2>
+              <p id="graphSubtitle">Upload images to analyze.</p>
+            </header>
+            <div class="scene-frame graph-frame" id="graphFrame">
+              <canvas id="graphCanvas" aria-label="Cognitive aesthetic graph"></canvas>
+              <div class="graph-tooltip" id="graphTooltip"></div>
+              <div class="graph-empty" id="graphEmpty">No graph generated.</div>
+            </div>
+          </section>
+
+          <section class="bottom-grid">
+            <article class="data-card">
+              <h2>Analysis</h2>
+              <div class="analysis-list" id="analysisList"></div>
+              <div class="analysis-tags" id="analysisTags"></div>
+              <div class="metrics-grid graph-metrics">
+                <div class="metric"><span>Nodes</span><strong id="metricGraphNodes">0</strong></div>
+                <div class="metric"><span>Edges</span><strong id="metricGraphEdges">0</strong></div>
+                <div class="metric"><span>Clusters</span><strong id="metricGraphClusters">0</strong></div>
+                <div class="metric"><span>Purity</span><strong id="metricGraphPurity">--</strong></div>
+              </div>
+              <div class="graph-detail" id="graphDetail">
+                <span>Selected node</span>
+                <strong>No node selected</strong>
+                <p>Click a node in the graph to inspect its cluster, weight and connected relations.</p>
+              </div>
+              <div class="graph-controls" hidden>
+                <label class="select-field" for="graphTypeFilter">
+                  <span>Type</span>
+                  <select id="graphTypeFilter">
+                    <option value="all">All</option>
+                    <option value="image">Images</option>
+                    <option value="color">Colors</option>
+                    <option value="object">Objects</option>
+                    <option value="symbol">Symbols</option>
+                    <option value="emotion">Emotions</option>
+                    <option value="style">Styles</option>
+                    <option value="composition">Composition</option>
+                    <option value="aesthetic">Aesthetics</option>
+                  </select>
+                </label>
+                <label class="select-field" for="graphClusterFilter">
+                  <span>Cluster</span>
+                  <select id="graphClusterFilter"><option value="all">All</option></select>
+                </label>
+                <label class="slider-field" for="graphEdgeFilter">
+                  <span>Min edge</span>
+                  <output id="graphEdgeFilterValue">0.05</output>
+                  <input id="graphEdgeFilter" type="range" min="0" max="1" step="0.01" value="0.05">
+                </label>
+                <label class="toggle-field" for="graphLabelToggle">
+                  <span>Labels</span>
+                  <input id="graphLabelToggle" type="checkbox" checked>
+                </label>
+              </div>
+            </article>
+
+            <article class="data-card harmony-card">
+              <h2>Spectral Aesthetic Analysis</h2>
+              <canvas id="harmonyCanvas" aria-label="Moodboard harmonic coherence"></canvas>
+              <div class="spectral-metrics" id="spectralMetrics">
+                <div class="spectral-metric"><span>Harmonicity</span><strong id="spectralHarmonicity">--</strong></div>
+                <div class="spectral-metric"><span>Mood purity</span><strong id="spectralMoodPurity">--</strong></div>
+                <div class="spectral-metric"><span>Spectral purity</span><strong id="spectralPurity">--</strong></div>
+                <div class="spectral-metric"><span>Dominant freq.</span><strong id="spectralFrequency">--</strong></div>
+                <div class="spectral-metric"><span>Spectral gap</span><strong id="spectralGap">--</strong></div>
+                <div class="spectral-metric"><span>Regimes</span><strong id="spectralRegimes">--</strong></div>
+                <div class="spectral-metric"><span>Dissonance</span><strong id="spectralDissonance">--</strong></div>
+              </div>
+              <div class="legend-row"><i class="swatch chart"></i><span>Graph Laplacian eigenvalue density</span></div>
+              <div class="status-line" id="harmonyStatus">Waiting for graph spectrum.</div>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <div class="tag-modal" id="analysisTagModal" role="dialog" aria-modal="true" aria-labelledby="analysisTagModalTitle" hidden>
+      <section class="tag-modal-panel">
+        <header class="tag-modal-header">
+          <div>
+            <span id="analysisTagModalMeta">Detected modality</span>
+            <h2 id="analysisTagModalTitle">Tags</h2>
+          </div>
+          <button class="button icon-only" id="analysisTagModalClose" type="button" aria-label="Close tags">
+            <svg aria-hidden="true"><use href="#icon-close"></use></svg>
+          </button>
+        </header>
+        <div class="tag-modal-list" id="analysisTagModalList"></div>
+      </section>
+    </div>
+
+    <script src="/static/js/graph_view.js"></script>
+    <script src="/static/js/spectral_view.js"></script>
+    <script src="/static/js/bento_view.js"></script>
+  </body>
+</html>
