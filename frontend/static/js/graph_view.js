@@ -582,6 +582,8 @@
         }
         graphEmpty.hidden = true;
         var graph = analysisPayload.graph;
+        var edgeColor = cssVar("--graph-edge", "#f8f8f8");
+        var nodeStrokeColor = cssVar("--graph-node-stroke", "#f8f8f8");
         var byId = {};
         graph.nodes.forEach(function(node) { byId[node.id] = node; });
         var visible = graphVisibleNodeSet(graph);
@@ -599,7 +601,7 @@
           var forcedVisible = essentialEdges[graphEdgeKey(edge)] && Number(edge.weight) < graphState.minEdge;
           var edgeAlpha = focus ? (connected ? 0.40 + Number(edge.weight) * 0.28 : 0.025) : 0.10 + Number(edge.weight) * 0.16;
           if (forcedVisible && !focus) edgeAlpha = Math.max(edgeAlpha, 0.16);
-          graphCtx.strokeStyle = colorToRgba("#f8f8f8", edgeAlpha);
+          graphCtx.strokeStyle = colorToRgba(edgeColor, edgeAlpha);
           graphCtx.lineWidth = forcedVisible ? 0.55 : (focus && connected ? 0.9 + Number(edge.weight) * 0.85 : 0.45 + Number(edge.weight) * 0.75);
           graphCtx.beginPath();
           graphCtx.moveTo(a.x, a.y);
@@ -641,14 +643,14 @@
             graphCtx.fill();
           }
           graphCtx.fillStyle = colorToRgba(color, focused ? 0.94 : 0.55);
-          graphCtx.strokeStyle = selected ? colorToRgba("#f8f8f8", 0.96) : colorToRgba("#f8f8f8", focused ? 0.16 : 0.06);
+          graphCtx.strokeStyle = selected ? colorToRgba(nodeStrokeColor, 0.96) : colorToRgba(nodeStrokeColor, focused ? 0.16 : 0.06);
           graphCtx.lineWidth = selected ? 1.8 : 0.75;
           graphCtx.beginPath();
           graphCtx.arc(pos.x, pos.y, radius, 0, Math.PI * 2);
           graphCtx.fill();
           graphCtx.stroke();
           if (node.type === "image") {
-            graphCtx.strokeStyle = colorToRgba("#f8f8f8", selected ? 0.52 : 0.18);
+            graphCtx.strokeStyle = colorToRgba(nodeStrokeColor, selected ? 0.52 : 0.18);
             graphCtx.lineWidth = 0.7;
             graphCtx.beginPath();
             graphCtx.arc(pos.x, pos.y, radius + 3.2, 0, Math.PI * 2);
@@ -686,6 +688,7 @@
         graphCtx.save();
         graphCtx.font = "11px Inter, system-ui, sans-serif";
         graphCtx.textBaseline = "middle";
+        var labelColor = cssVar("--graph-label", "#f8f8f8");
         var placed = [];
         var labelLimit = nodes.length > 120 ? 18 : (nodes.length > 70 ? 24 : 34);
         var drawn = 0;
@@ -718,7 +721,7 @@
           if (overlaps && !active) return;
           placed.push(box);
           drawn += 1;
-          graphCtx.fillStyle = colorToRgba("#f8f8f8", !focus || focus.nodes[node.id] ? 0.72 : 0.18);
+          graphCtx.fillStyle = colorToRgba(labelColor, !focus || focus.nodes[node.id] ? 0.72 : 0.18);
           graphCtx.fillText(label, pos.x + radius + 6, pos.y);
         });
         graphCtx.restore();

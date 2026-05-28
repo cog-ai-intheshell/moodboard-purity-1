@@ -28105,7 +28105,7 @@
     "cbacad1be04d99f6": {
       "schemaVersion": "aesthetic-world-sample-v1",
       "id": "cbacad1be04d99f6",
-      "created": 1779986779.569739,
+      "created": 1779989932.8752708,
       "imageCount": 12,
       "dominantAesthetic": {
         "name": "Lobotomy Chic",
@@ -29149,7 +29149,7 @@
     "15371643c6f150f4": {
       "schemaVersion": "aesthetic-world-sample-v1",
       "id": "15371643c6f150f4",
-      "created": 1779986980.3955579,
+      "created": 1779992864.431786,
       "imageCount": 12,
       "dominantAesthetic": {
         "name": "Lobotomy Chic",
@@ -29667,8 +29667,3515 @@
           ]
         }
       ]
+    },
+    "5540465277001862": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "5540465277001862",
+      "created": 1779988155.461616,
+      "imageCount": 12,
+      "dominantAesthetic": {
+        "name": "Lobotomy Chic",
+        "score": 0.882,
+        "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8292,
+        "keywords": [
+          "1950s",
+          "2000s",
+          "2010s",
+          "2020s",
+          "act",
+          "acting",
+          "alice",
+          "almost",
+          "alt",
+          "amy",
+          "apathetic",
+          "article",
+          "artificial",
+          "authenticity",
+          "awareness",
+          "beige",
+          "blue",
+          "brands",
+          "broadness",
+          "brown",
+          "category",
+          "catholic",
+          "caused",
+          "chaos",
+          "chic",
+          "coined",
+          "colours",
+          "com",
+          "combination",
+          "coquette",
+          "cult",
+          "cultural"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Lobotomy Chic",
+          "score": 0.882,
+          "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8292,
+          "keywords": [
+            "1950s",
+            "2000s",
+            "2010s",
+            "2020s",
+            "act",
+            "acting",
+            "alice",
+            "almost",
+            "alt",
+            "amy",
+            "apathetic",
+            "article",
+            "artificial",
+            "authenticity",
+            "awareness",
+            "beige",
+            "blue",
+            "brands",
+            "broadness",
+            "brown",
+            "category",
+            "catholic",
+            "caused",
+            "chaos",
+            "chic",
+            "coined",
+            "colours",
+            "com",
+            "combination",
+            "coquette",
+            "cult",
+            "cultural"
+          ]
+        },
+        {
+          "name": "Whimsy Twee",
+          "score": 0.8815,
+          "description": "Whimsy Twee is an aesthetic that emerged on TikTok in the mid-2020s, characterized by bright colors, a playful use of patterns, and a sense of childlike wonder, often incorporating nostalgic motifs. While drawing on the ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8284,
+          "keywords": [
+            "2000s",
+            "2020s",
+            "90s",
+            "acoustic",
+            "america",
+            "artists",
+            "associated",
+            "attitude",
+            "been",
+            "boyd",
+            "bright",
+            "carefree",
+            "character",
+            "characterized",
+            "characters",
+            "charm",
+            "chic",
+            "childhood",
+            "childlike",
+            "cited",
+            "clovercore",
+            "colorful",
+            "com",
+            "combining",
+            "contributed",
+            "creativity",
+            "dawson",
+            "deschanel",
+            "development",
+            "dinner",
+            "distinguishes",
+            "diverse"
+          ]
+        },
+        {
+          "name": "Auroracore",
+          "score": 0.8804,
+          "description": "Auroracore, also known as Ethereal Fantasy, is an aesthetic that revolves around the concept of otherworldly magic and is heavily inspired by fantasy media created for young girls. This genre focuses on the concept of ma",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8268,
+          "keywords": [
+            "2021",
+            "50th",
+            "accents",
+            "after",
+            "almost",
+            "angelcore",
+            "anniversary",
+            "any",
+            "around",
+            "art",
+            "artistic",
+            "auroracore",
+            "auroras",
+            "beauty",
+            "because",
+            "being",
+            "blended",
+            "boards",
+            "brightest",
+            "but",
+            "character",
+            "clouds",
+            "coined",
+            "colorful",
+            "company",
+            "concept",
+            "created",
+            "crystals",
+            "cyan",
+            "d100",
+            "dark",
+            "disney"
+          ]
+        },
+        {
+          "name": "Silicon Dreams",
+          "score": 0.8803,
+          "description": "Silicon Dreams, also known as Old CGI or Retro CGI, refers to the surreal and uncanny visuals seen in early CGI animations, art and videogames from the mid-1980s to early 2000s. [https://en.wikipedia.org/wiki/Computer-ge",
+          "source": "Aesthetics Wiki + CARI Institute",
+          "vectorScore": 0.8266,
+          "keywords": [
+            "1950s",
+            "1970s",
+            "1972",
+            "1980s",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990s",
+            "2000s",
+            "4f52917471aaadbf0e66ebd9e17608bd",
+            "60s",
+            "80s",
+            "90s",
+            "aaa",
+            "aaadbf",
+            "aafsar",
+            "aaqau",
+            "abertura",
+            "abfb",
+            "able",
+            "abstract",
+            "ace",
+            "advertisements",
+            "aero",
+            "angel",
+            "animated",
+            "animation",
+            "animations",
+            "apparent",
+            "architecture"
+          ]
+        },
+        {
+          "name": "Heart Emoji Meme",
+          "score": 0.8798,
+          "description": "Heart Emoji Memes (also known as Soft Edits) describe a specific digital editing style and internet aesthetic that peaked in the late 2010s. The aesthetic is characterized by the chaotic or decorative layering of specifi",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8259,
+          "keywords": [
+            "2010s",
+            "2018",
+            "affection",
+            "approach",
+            "bazzi",
+            "blur",
+            "blush",
+            "broader",
+            "catalyzed",
+            "chaotic",
+            "characterized",
+            "cluttered",
+            "colours",
+            "concept",
+            "create",
+            "crowns",
+            "decorative",
+            "deep",
+            "demonstrating",
+            "describe",
+            "digital",
+            "distinct",
+            "early",
+            "editing",
+            "edits",
+            "emoji",
+            "emoticons",
+            "entered",
+            "exaggerated",
+            "existing",
+            "faces",
+            "fandom"
+          ]
+        },
+        {
+          "name": "Catholic Horror",
+          "score": 0.8797,
+          "description": "Catholic Horror (better known as Religious Horror While the term \"Religious Horror\" could technically encompass horror derived from various religious systems, the vast majority of examples center on Catholic themes and i",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8257,
+          "keywords": [
+            "1960s",
+            "1968",
+            "architectural",
+            "architecture",
+            "associated",
+            "baby",
+            "better",
+            "between",
+            "black",
+            "blood",
+            "blue",
+            "candles",
+            "cathedrals",
+            "catholic",
+            "catholicism",
+            "center",
+            "church",
+            "cinema",
+            "cited",
+            "conflict",
+            "could",
+            "countries",
+            "creepy",
+            "cross",
+            "crosses",
+            "crucifixes",
+            "cultural",
+            "dark",
+            "darkness",
+            "death",
+            "demonic",
+            "depictions"
+          ]
+        }
+      ],
+      "genome": {
+        "negative space": 0.0327,
+        "liminality": 0.0327,
+        "coldness": 0.029,
+        "woman": 0.0218,
+        "watercolor": 0.0218,
+        "soft focus": 0.02,
+        "techno-optimism": 0.0181,
+        "airy": 0.0181,
+        "dreamy": 0.0181,
+        "light": 0.0181,
+        "pastel": 0.0181,
+        "soft": 0.0181,
+        "verticality": 0.0181,
+        "face": 0.0163,
+        "cartoon": 0.0163,
+        "minimal": 0.0163,
+        "painting": 0.0163,
+        "painting woman": 0.0163
+      },
+      "palette": [
+        {
+          "name": "Peach Orange",
+          "hex": "#fecf9d",
+          "rgb": [
+            254,
+            207,
+            157
+          ],
+          "weight": 0.1142
+        },
+        {
+          "name": "Toast",
+          "hex": "#b27f6b",
+          "rgb": [
+            162,
+            116,
+            100
+          ],
+          "weight": 0.0195
+        },
+        {
+          "name": "Affair",
+          "hex": "#693d8c",
+          "rgb": [
+            114,
+            69,
+            146
+          ],
+          "weight": 0.0189
+        },
+        {
+          "name": "Chetwode Blue",
+          "hex": "#8c83d0",
+          "rgb": [
+            140,
+            131,
+            208
+          ],
+          "weight": 0.0148
+        },
+        {
+          "name": "Neptune",
+          "hex": "#72aeb6",
+          "rgb": [
+            123,
+            176,
+            182
+          ],
+          "weight": 0.0146
+        },
+        {
+          "name": "Blue Bell",
+          "hex": "#978ec7",
+          "rgb": [
+            158,
+            144,
+            194
+          ],
+          "weight": 0.014
+        },
+        {
+          "name": "Antique Brass",
+          "hex": "#cb9065",
+          "rgb": [
+            193,
+            135,
+            97
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Prelude",
+          "hex": "#bfb5e0",
+          "rgb": [
+            198,
+            189,
+            227
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Quicksand",
+          "hex": "#bf9d8b",
+          "rgb": [
+            189,
+            156,
+            141
+          ],
+          "weight": 0.0125
+        },
+        {
+          "name": "Indian Khaki",
+          "hex": "#bbad8f",
+          "rgb": [
+            195,
+            176,
+            145
+          ],
+          "weight": 0.0121
+        },
+        {
+          "name": "Wistful",
+          "hex": "#a9a8d8",
+          "rgb": [
+            169,
+            168,
+            216
+          ],
+          "weight": 0.0118
+        },
+        {
+          "name": "Santa Fe",
+          "hex": "#ab694d",
+          "rgb": [
+            171,
+            105,
+            83
+          ],
+          "weight": 0.0118
+        }
+      ],
+      "scores": {
+        "purity": 0.5138,
+        "purityScore": 0.5138,
+        "latentPurity": 0.5922,
+        "spectralPurity": 0.2695,
+        "harmonicity": 0.2632,
+        "harmonyCoherence": 0.2632,
+        "hybridation": 0.4862,
+        "clusterCohesion": 0.9265,
+        "clusterSeparation": 0.5258,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.2675,
+        "styleCoherence": 0.2071,
+        "affectCoherence": 0.6207,
+        "symbolicCoherence": 0.2295,
+        "emotionalCoherence": 0.2759,
+        "compositionCoherence": 0.7308
+      },
+      "modalities": {
+        "image": 12,
+        "color": 120,
+        "emotion": 6,
+        "object": 6,
+        "symbol": 36,
+        "texture": 3,
+        "style": 14,
+        "affect": 9,
+        "composition": 5,
+        "aesthetic": 2
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.5833,
+          "concepts": [
+            "soft focus",
+            "liminality",
+            "minimal",
+            "soft",
+            "pastel",
+            "light"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.25,
+          "concepts": [
+            "cartoon",
+            "face",
+            "soft focus",
+            "minimal",
+            "liminality",
+            "balanced"
+          ]
+        },
+        {
+          "id": 2,
+          "share": 0.0833,
+          "concepts": [
+            "warm muted",
+            "eye",
+            "star",
+            "center",
+            "painting",
+            "soft focus"
+          ]
+        },
+        {
+          "id": 3,
+          "share": 0.0833,
+          "concepts": [
+            "balanced",
+            "woman cat",
+            "drawing woman cat",
+            "drawing",
+            "soft focus",
+            "minimal"
+          ]
+        }
+      ]
+    },
+    "f5ee535649356473": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "f5ee535649356473",
+      "created": 1779992394.9379299,
+      "imageCount": 12,
+      "dominantAesthetic": {
+        "name": "Lobotomy Chic",
+        "score": 0.882,
+        "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8292,
+        "keywords": [
+          "1950s",
+          "2000s",
+          "2010s",
+          "2020s",
+          "act",
+          "acting",
+          "alice",
+          "almost",
+          "alt",
+          "amy",
+          "apathetic",
+          "article",
+          "artificial",
+          "authenticity",
+          "awareness",
+          "beige",
+          "blue",
+          "brands",
+          "broadness",
+          "brown",
+          "category",
+          "catholic",
+          "caused",
+          "chaos",
+          "chic",
+          "coined",
+          "colours",
+          "com",
+          "combination",
+          "coquette",
+          "cult",
+          "cultural"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Lobotomy Chic",
+          "score": 0.882,
+          "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8292,
+          "keywords": [
+            "1950s",
+            "2000s",
+            "2010s",
+            "2020s",
+            "act",
+            "acting",
+            "alice",
+            "almost",
+            "alt",
+            "amy",
+            "apathetic",
+            "article",
+            "artificial",
+            "authenticity",
+            "awareness",
+            "beige",
+            "blue",
+            "brands",
+            "broadness",
+            "brown",
+            "category",
+            "catholic",
+            "caused",
+            "chaos",
+            "chic",
+            "coined",
+            "colours",
+            "com",
+            "combination",
+            "coquette",
+            "cult",
+            "cultural"
+          ]
+        },
+        {
+          "name": "Whimsy Twee",
+          "score": 0.8815,
+          "description": "Whimsy Twee is an aesthetic that emerged on TikTok in the mid-2020s, characterized by bright colors, a playful use of patterns, and a sense of childlike wonder, often incorporating nostalgic motifs. While drawing on the ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8284,
+          "keywords": [
+            "2000s",
+            "2020s",
+            "90s",
+            "acoustic",
+            "america",
+            "artists",
+            "associated",
+            "attitude",
+            "been",
+            "boyd",
+            "bright",
+            "carefree",
+            "character",
+            "characterized",
+            "characters",
+            "charm",
+            "chic",
+            "childhood",
+            "childlike",
+            "cited",
+            "clovercore",
+            "colorful",
+            "com",
+            "combining",
+            "contributed",
+            "creativity",
+            "dawson",
+            "deschanel",
+            "development",
+            "dinner",
+            "distinguishes",
+            "diverse"
+          ]
+        },
+        {
+          "name": "Auroracore",
+          "score": 0.8804,
+          "description": "Auroracore, also known as Ethereal Fantasy, is an aesthetic that revolves around the concept of otherworldly magic and is heavily inspired by fantasy media created for young girls. This genre focuses on the concept of ma",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8268,
+          "keywords": [
+            "2021",
+            "50th",
+            "accents",
+            "after",
+            "almost",
+            "angelcore",
+            "anniversary",
+            "any",
+            "around",
+            "art",
+            "artistic",
+            "auroracore",
+            "auroras",
+            "beauty",
+            "because",
+            "being",
+            "blended",
+            "boards",
+            "brightest",
+            "but",
+            "character",
+            "clouds",
+            "coined",
+            "colorful",
+            "company",
+            "concept",
+            "created",
+            "crystals",
+            "cyan",
+            "d100",
+            "dark",
+            "disney"
+          ]
+        },
+        {
+          "name": "Silicon Dreams",
+          "score": 0.8803,
+          "description": "Silicon Dreams, also known as Old CGI or Retro CGI, refers to the surreal and uncanny visuals seen in early CGI animations, art and videogames from the mid-1980s to early 2000s. [https://en.wikipedia.org/wiki/Computer-ge",
+          "source": "Aesthetics Wiki + CARI Institute",
+          "vectorScore": 0.8266,
+          "keywords": [
+            "1950s",
+            "1970s",
+            "1972",
+            "1980s",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990s",
+            "2000s",
+            "4f52917471aaadbf0e66ebd9e17608bd",
+            "60s",
+            "80s",
+            "90s",
+            "aaa",
+            "aaadbf",
+            "aafsar",
+            "aaqau",
+            "abertura",
+            "abfb",
+            "able",
+            "abstract",
+            "ace",
+            "advertisements",
+            "aero",
+            "angel",
+            "animated",
+            "animation",
+            "animations",
+            "apparent",
+            "architecture"
+          ]
+        },
+        {
+          "name": "Heart Emoji Meme",
+          "score": 0.8798,
+          "description": "Heart Emoji Memes (also known as Soft Edits) describe a specific digital editing style and internet aesthetic that peaked in the late 2010s. The aesthetic is characterized by the chaotic or decorative layering of specifi",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8259,
+          "keywords": [
+            "2010s",
+            "2018",
+            "affection",
+            "approach",
+            "bazzi",
+            "blur",
+            "blush",
+            "broader",
+            "catalyzed",
+            "chaotic",
+            "characterized",
+            "cluttered",
+            "colours",
+            "concept",
+            "create",
+            "crowns",
+            "decorative",
+            "deep",
+            "demonstrating",
+            "describe",
+            "digital",
+            "distinct",
+            "early",
+            "editing",
+            "edits",
+            "emoji",
+            "emoticons",
+            "entered",
+            "exaggerated",
+            "existing",
+            "faces",
+            "fandom"
+          ]
+        },
+        {
+          "name": "Catholic Horror",
+          "score": 0.8797,
+          "description": "Catholic Horror (better known as Religious Horror While the term \"Religious Horror\" could technically encompass horror derived from various religious systems, the vast majority of examples center on Catholic themes and i",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8257,
+          "keywords": [
+            "1960s",
+            "1968",
+            "architectural",
+            "architecture",
+            "associated",
+            "baby",
+            "better",
+            "between",
+            "black",
+            "blood",
+            "blue",
+            "candles",
+            "cathedrals",
+            "catholic",
+            "catholicism",
+            "center",
+            "church",
+            "cinema",
+            "cited",
+            "conflict",
+            "could",
+            "countries",
+            "creepy",
+            "cross",
+            "crosses",
+            "crucifixes",
+            "cultural",
+            "dark",
+            "darkness",
+            "death",
+            "demonic",
+            "depictions"
+          ]
+        }
+      ],
+      "genome": {
+        "negative space": 0.0327,
+        "liminality": 0.0327,
+        "coldness": 0.029,
+        "woman": 0.0218,
+        "watercolor": 0.0218,
+        "soft focus": 0.02,
+        "techno-optimism": 0.0181,
+        "airy": 0.0181,
+        "dreamy": 0.0181,
+        "light": 0.0181,
+        "pastel": 0.0181,
+        "soft": 0.0181,
+        "verticality": 0.0181,
+        "face": 0.0163,
+        "cartoon": 0.0163,
+        "minimal": 0.0163,
+        "painting": 0.0163,
+        "painting woman": 0.0163
+      },
+      "palette": [
+        {
+          "name": "Peach Orange",
+          "hex": "#fecf9d",
+          "rgb": [
+            254,
+            207,
+            157
+          ],
+          "weight": 0.1142
+        },
+        {
+          "name": "Toast",
+          "hex": "#b27f6b",
+          "rgb": [
+            162,
+            116,
+            100
+          ],
+          "weight": 0.0195
+        },
+        {
+          "name": "Affair",
+          "hex": "#693d8c",
+          "rgb": [
+            114,
+            69,
+            146
+          ],
+          "weight": 0.0189
+        },
+        {
+          "name": "Chetwode Blue",
+          "hex": "#8c83d0",
+          "rgb": [
+            140,
+            131,
+            208
+          ],
+          "weight": 0.0148
+        },
+        {
+          "name": "Neptune",
+          "hex": "#72aeb6",
+          "rgb": [
+            123,
+            176,
+            182
+          ],
+          "weight": 0.0146
+        },
+        {
+          "name": "Blue Bell",
+          "hex": "#978ec7",
+          "rgb": [
+            158,
+            144,
+            194
+          ],
+          "weight": 0.014
+        },
+        {
+          "name": "Antique Brass",
+          "hex": "#cb9065",
+          "rgb": [
+            193,
+            135,
+            97
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Prelude",
+          "hex": "#bfb5e0",
+          "rgb": [
+            198,
+            189,
+            227
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Quicksand",
+          "hex": "#bf9d8b",
+          "rgb": [
+            189,
+            156,
+            141
+          ],
+          "weight": 0.0125
+        },
+        {
+          "name": "Indian Khaki",
+          "hex": "#bbad8f",
+          "rgb": [
+            195,
+            176,
+            145
+          ],
+          "weight": 0.0121
+        },
+        {
+          "name": "Wistful",
+          "hex": "#a9a8d8",
+          "rgb": [
+            169,
+            168,
+            216
+          ],
+          "weight": 0.0118
+        },
+        {
+          "name": "Santa Fe",
+          "hex": "#ab694d",
+          "rgb": [
+            171,
+            105,
+            83
+          ],
+          "weight": 0.0118
+        }
+      ],
+      "scores": {
+        "purity": 0.5138,
+        "purityScore": 0.5138,
+        "latentPurity": 0.5922,
+        "spectralPurity": 0.2695,
+        "harmonicity": 0.2632,
+        "harmonyCoherence": 0.2632,
+        "hybridation": 0.4862,
+        "clusterCohesion": 0.9265,
+        "clusterSeparation": 0.5258,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.2675,
+        "styleCoherence": 0.2071,
+        "affectCoherence": 0.6207,
+        "symbolicCoherence": 0.2295,
+        "emotionalCoherence": 0.2759,
+        "compositionCoherence": 0.7308
+      },
+      "modalities": {
+        "image": 12,
+        "color": 120,
+        "emotion": 6,
+        "object": 6,
+        "symbol": 36,
+        "texture": 3,
+        "style": 14,
+        "affect": 9,
+        "composition": 5,
+        "aesthetic": 2
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.5833,
+          "concepts": [
+            "soft focus",
+            "liminality",
+            "minimal",
+            "soft",
+            "pastel",
+            "light"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.25,
+          "concepts": [
+            "cartoon",
+            "face",
+            "soft focus",
+            "minimal",
+            "liminality",
+            "balanced"
+          ]
+        },
+        {
+          "id": 2,
+          "share": 0.0833,
+          "concepts": [
+            "warm muted",
+            "eye",
+            "star",
+            "center",
+            "painting",
+            "soft focus"
+          ]
+        },
+        {
+          "id": 3,
+          "share": 0.0833,
+          "concepts": [
+            "balanced",
+            "woman cat",
+            "drawing woman cat",
+            "drawing",
+            "soft focus",
+            "minimal"
+          ]
+        }
+      ]
+    },
+    "58bfa19db5ecc1c0": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "58bfa19db5ecc1c0",
+      "created": 1779992481.531266,
+      "imageCount": 12,
+      "dominantAesthetic": {
+        "name": "Lobotomy Chic",
+        "score": 0.882,
+        "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8292,
+        "keywords": [
+          "1950s",
+          "2000s",
+          "2010s",
+          "2020s",
+          "act",
+          "acting",
+          "alice",
+          "almost",
+          "alt",
+          "amy",
+          "apathetic",
+          "article",
+          "artificial",
+          "authenticity",
+          "awareness",
+          "beige",
+          "blue",
+          "brands",
+          "broadness",
+          "brown",
+          "category",
+          "catholic",
+          "caused",
+          "chaos",
+          "chic",
+          "coined",
+          "colours",
+          "com",
+          "combination",
+          "coquette",
+          "cult",
+          "cultural"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Lobotomy Chic",
+          "score": 0.882,
+          "description": "Lobotomy Chic is an aesthetic that focuses on exploring femininity through meta-irony, detachment and nihilism. It is also heavily influenced by different early 2000s aesthetics and early 2010s Tumblr aesthetics, such as",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8292,
+          "keywords": [
+            "1950s",
+            "2000s",
+            "2010s",
+            "2020s",
+            "act",
+            "acting",
+            "alice",
+            "almost",
+            "alt",
+            "amy",
+            "apathetic",
+            "article",
+            "artificial",
+            "authenticity",
+            "awareness",
+            "beige",
+            "blue",
+            "brands",
+            "broadness",
+            "brown",
+            "category",
+            "catholic",
+            "caused",
+            "chaos",
+            "chic",
+            "coined",
+            "colours",
+            "com",
+            "combination",
+            "coquette",
+            "cult",
+            "cultural"
+          ]
+        },
+        {
+          "name": "Whimsy Twee",
+          "score": 0.8815,
+          "description": "Whimsy Twee is an aesthetic that emerged on TikTok in the mid-2020s, characterized by bright colors, a playful use of patterns, and a sense of childlike wonder, often incorporating nostalgic motifs. While drawing on the ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8284,
+          "keywords": [
+            "2000s",
+            "2020s",
+            "90s",
+            "acoustic",
+            "america",
+            "artists",
+            "associated",
+            "attitude",
+            "been",
+            "boyd",
+            "bright",
+            "carefree",
+            "character",
+            "characterized",
+            "characters",
+            "charm",
+            "chic",
+            "childhood",
+            "childlike",
+            "cited",
+            "clovercore",
+            "colorful",
+            "com",
+            "combining",
+            "contributed",
+            "creativity",
+            "dawson",
+            "deschanel",
+            "development",
+            "dinner",
+            "distinguishes",
+            "diverse"
+          ]
+        },
+        {
+          "name": "Auroracore",
+          "score": 0.8804,
+          "description": "Auroracore, also known as Ethereal Fantasy, is an aesthetic that revolves around the concept of otherworldly magic and is heavily inspired by fantasy media created for young girls. This genre focuses on the concept of ma",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8268,
+          "keywords": [
+            "2021",
+            "50th",
+            "accents",
+            "after",
+            "almost",
+            "angelcore",
+            "anniversary",
+            "any",
+            "around",
+            "art",
+            "artistic",
+            "auroracore",
+            "auroras",
+            "beauty",
+            "because",
+            "being",
+            "blended",
+            "boards",
+            "brightest",
+            "but",
+            "character",
+            "clouds",
+            "coined",
+            "colorful",
+            "company",
+            "concept",
+            "created",
+            "crystals",
+            "cyan",
+            "d100",
+            "dark",
+            "disney"
+          ]
+        },
+        {
+          "name": "Silicon Dreams",
+          "score": 0.8803,
+          "description": "Silicon Dreams, also known as Old CGI or Retro CGI, refers to the surreal and uncanny visuals seen in early CGI animations, art and videogames from the mid-1980s to early 2000s. [https://en.wikipedia.org/wiki/Computer-ge",
+          "source": "Aesthetics Wiki + CARI Institute",
+          "vectorScore": 0.8266,
+          "keywords": [
+            "1950s",
+            "1970s",
+            "1972",
+            "1980s",
+            "1985",
+            "1986",
+            "1987",
+            "1988",
+            "1989",
+            "1990s",
+            "2000s",
+            "4f52917471aaadbf0e66ebd9e17608bd",
+            "60s",
+            "80s",
+            "90s",
+            "aaa",
+            "aaadbf",
+            "aafsar",
+            "aaqau",
+            "abertura",
+            "abfb",
+            "able",
+            "abstract",
+            "ace",
+            "advertisements",
+            "aero",
+            "angel",
+            "animated",
+            "animation",
+            "animations",
+            "apparent",
+            "architecture"
+          ]
+        },
+        {
+          "name": "Heart Emoji Meme",
+          "score": 0.8798,
+          "description": "Heart Emoji Memes (also known as Soft Edits) describe a specific digital editing style and internet aesthetic that peaked in the late 2010s. The aesthetic is characterized by the chaotic or decorative layering of specifi",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8259,
+          "keywords": [
+            "2010s",
+            "2018",
+            "affection",
+            "approach",
+            "bazzi",
+            "blur",
+            "blush",
+            "broader",
+            "catalyzed",
+            "chaotic",
+            "characterized",
+            "cluttered",
+            "colours",
+            "concept",
+            "create",
+            "crowns",
+            "decorative",
+            "deep",
+            "demonstrating",
+            "describe",
+            "digital",
+            "distinct",
+            "early",
+            "editing",
+            "edits",
+            "emoji",
+            "emoticons",
+            "entered",
+            "exaggerated",
+            "existing",
+            "faces",
+            "fandom"
+          ]
+        },
+        {
+          "name": "Catholic Horror",
+          "score": 0.8797,
+          "description": "Catholic Horror (better known as Religious Horror While the term \"Religious Horror\" could technically encompass horror derived from various religious systems, the vast majority of examples center on Catholic themes and i",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8257,
+          "keywords": [
+            "1960s",
+            "1968",
+            "architectural",
+            "architecture",
+            "associated",
+            "baby",
+            "better",
+            "between",
+            "black",
+            "blood",
+            "blue",
+            "candles",
+            "cathedrals",
+            "catholic",
+            "catholicism",
+            "center",
+            "church",
+            "cinema",
+            "cited",
+            "conflict",
+            "could",
+            "countries",
+            "creepy",
+            "cross",
+            "crosses",
+            "crucifixes",
+            "cultural",
+            "dark",
+            "darkness",
+            "death",
+            "demonic",
+            "depictions"
+          ]
+        }
+      ],
+      "genome": {
+        "negative space": 0.0327,
+        "liminality": 0.0327,
+        "coldness": 0.029,
+        "woman": 0.0218,
+        "watercolor": 0.0218,
+        "soft focus": 0.02,
+        "techno-optimism": 0.0181,
+        "airy": 0.0181,
+        "dreamy": 0.0181,
+        "light": 0.0181,
+        "pastel": 0.0181,
+        "soft": 0.0181,
+        "verticality": 0.0181,
+        "face": 0.0163,
+        "cartoon": 0.0163,
+        "minimal": 0.0163,
+        "painting": 0.0163,
+        "painting woman": 0.0163
+      },
+      "palette": [
+        {
+          "name": "Peach Orange",
+          "hex": "#fecf9d",
+          "rgb": [
+            254,
+            207,
+            157
+          ],
+          "weight": 0.1142
+        },
+        {
+          "name": "Toast",
+          "hex": "#b27f6b",
+          "rgb": [
+            162,
+            116,
+            100
+          ],
+          "weight": 0.0195
+        },
+        {
+          "name": "Affair",
+          "hex": "#693d8c",
+          "rgb": [
+            114,
+            69,
+            146
+          ],
+          "weight": 0.0189
+        },
+        {
+          "name": "Chetwode Blue",
+          "hex": "#8c83d0",
+          "rgb": [
+            140,
+            131,
+            208
+          ],
+          "weight": 0.0148
+        },
+        {
+          "name": "Neptune",
+          "hex": "#72aeb6",
+          "rgb": [
+            123,
+            176,
+            182
+          ],
+          "weight": 0.0146
+        },
+        {
+          "name": "Blue Bell",
+          "hex": "#978ec7",
+          "rgb": [
+            158,
+            144,
+            194
+          ],
+          "weight": 0.014
+        },
+        {
+          "name": "Antique Brass",
+          "hex": "#cb9065",
+          "rgb": [
+            193,
+            135,
+            97
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Prelude",
+          "hex": "#bfb5e0",
+          "rgb": [
+            198,
+            189,
+            227
+          ],
+          "weight": 0.0131
+        },
+        {
+          "name": "Quicksand",
+          "hex": "#bf9d8b",
+          "rgb": [
+            189,
+            156,
+            141
+          ],
+          "weight": 0.0125
+        },
+        {
+          "name": "Indian Khaki",
+          "hex": "#bbad8f",
+          "rgb": [
+            195,
+            176,
+            145
+          ],
+          "weight": 0.0121
+        },
+        {
+          "name": "Wistful",
+          "hex": "#a9a8d8",
+          "rgb": [
+            169,
+            168,
+            216
+          ],
+          "weight": 0.0118
+        },
+        {
+          "name": "Santa Fe",
+          "hex": "#ab694d",
+          "rgb": [
+            171,
+            105,
+            83
+          ],
+          "weight": 0.0118
+        }
+      ],
+      "scores": {
+        "purity": 0.5138,
+        "purityScore": 0.5138,
+        "latentPurity": 0.5922,
+        "spectralPurity": 0.2695,
+        "harmonicity": 0.2632,
+        "harmonyCoherence": 0.2632,
+        "hybridation": 0.4862,
+        "clusterCohesion": 0.9265,
+        "clusterSeparation": 0.5258,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.2675,
+        "styleCoherence": 0.2071,
+        "affectCoherence": 0.6207,
+        "symbolicCoherence": 0.2295,
+        "emotionalCoherence": 0.2759,
+        "compositionCoherence": 0.7308
+      },
+      "modalities": {
+        "image": 12,
+        "color": 120,
+        "emotion": 6,
+        "object": 6,
+        "symbol": 36,
+        "texture": 3,
+        "style": 14,
+        "affect": 9,
+        "composition": 5,
+        "aesthetic": 2
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.5833,
+          "concepts": [
+            "soft focus",
+            "liminality",
+            "minimal",
+            "soft",
+            "pastel",
+            "light"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.25,
+          "concepts": [
+            "cartoon",
+            "face",
+            "soft focus",
+            "minimal",
+            "liminality",
+            "balanced"
+          ]
+        },
+        {
+          "id": 2,
+          "share": 0.0833,
+          "concepts": [
+            "warm muted",
+            "eye",
+            "star",
+            "center",
+            "painting",
+            "soft focus"
+          ]
+        },
+        {
+          "id": 3,
+          "share": 0.0833,
+          "concepts": [
+            "balanced",
+            "woman cat",
+            "drawing woman cat",
+            "drawing",
+            "soft focus",
+            "minimal"
+          ]
+        }
+      ]
+    },
+    "cabd2e5b291eb0ff": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "cabd2e5b291eb0ff",
+      "created": 1779993375.3997571,
+      "imageCount": 1,
+      "dominantAesthetic": {
+        "name": "Dark Fantasy",
+        "score": 0.8348,
+        "description": "Dark Fantasy is a literary, artistic, and cinematic subgenre of fantasy that incorporates the disturbing, sinister, and often frightening thematic and visual elements typically associated with horror. \"Dark fantasy\" on e",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.7969,
+        "keywords": [
+          "2023",
+          "aesthetically",
+          "alternative",
+          "ambiguity",
+          "ambiguous",
+          "anti",
+          "apocalyptic",
+          "architecture",
+          "artistic",
+          "associated",
+          "beauty",
+          "between",
+          "bittersweet",
+          "black",
+          "blends",
+          "blue",
+          "blurred",
+          "bone",
+          "central",
+          "characters",
+          "cinematic",
+          "com",
+          "common",
+          "component",
+          "compromised",
+          "conflicts",
+          "considered",
+          "conventional",
+          "corvids",
+          "cost",
+          "creature",
+          "crimson"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Dark Fantasy",
+          "score": 0.8348,
+          "description": "Dark Fantasy is a literary, artistic, and cinematic subgenre of fantasy that incorporates the disturbing, sinister, and often frightening thematic and visual elements typically associated with horror. \"Dark fantasy\" on e",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7969,
+          "keywords": [
+            "2023",
+            "aesthetically",
+            "alternative",
+            "ambiguity",
+            "ambiguous",
+            "anti",
+            "apocalyptic",
+            "architecture",
+            "artistic",
+            "associated",
+            "beauty",
+            "between",
+            "bittersweet",
+            "black",
+            "blends",
+            "blue",
+            "blurred",
+            "bone",
+            "central",
+            "characters",
+            "cinematic",
+            "com",
+            "common",
+            "component",
+            "compromised",
+            "conflicts",
+            "considered",
+            "conventional",
+            "corvids",
+            "cost",
+            "creature",
+            "crimson"
+          ]
+        },
+        {
+          "name": "Nyashka",
+          "score": 0.7589,
+          "description": "Nyashka (Russian: Няшка) is an alternative style originating in Russia and Ukraine, centered around a highly specific makeup look drawing from anime aesthetics and applied against the backdrop of post-Soviet urban life. ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7987,
+          "keywords": [
+            "2010s",
+            "absorbed",
+            "accessories",
+            "across",
+            "adorable",
+            "affectionate",
+            "against",
+            "alt",
+            "alternative",
+            "animals",
+            "animation",
+            "anime",
+            "applied",
+            "around",
+            "backdrop",
+            "bears",
+            "black",
+            "broadly",
+            "brows",
+            "burgundy",
+            "but",
+            "cat",
+            "centered",
+            "chain",
+            "characters",
+            "clothing",
+            "combined",
+            "common",
+            "communities",
+            "compliment",
+            "construction",
+            "contact"
+          ]
+        },
+        {
+          "name": "Metalhead",
+          "score": 0.7538,
+          "description": "Metalheads are dedicated fans of Heavy Metal music who adhere to a subculture characterized by shared fashion, rituals, and an ideology of authenticity and alienation from mainstream society. The subculture emerged in th",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7909,
+          "keywords": [
+            "1960s",
+            "1970s",
+            "2000",
+            "adhere",
+            "alienation",
+            "alongside",
+            "anti",
+            "appeal",
+            "area",
+            "authenticity",
+            "authority",
+            "band",
+            "bands",
+            "black",
+            "blue",
+            "blues",
+            "both",
+            "characteristic",
+            "characterized",
+            "code",
+            "com",
+            "commercial",
+            "commercialism",
+            "corna",
+            "credited",
+            "crystallizing",
+            "dark",
+            "dedicated",
+            "deena",
+            "deep",
+            "demands",
+            "demonstrate"
+          ]
+        },
+        {
+          "name": "Queencore",
+          "score": 0.7538,
+          "description": "Queencore is a more mature, regal variant of Princesscore and a subgenre of Royalcore. Queencore, as a whole, draws from matriarchal and regal roles in many monarchies. One example of such would be the former Queen of En",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7908,
+          "keywords": [
+            "accounts",
+            "air",
+            "american",
+            "approach",
+            "baddie",
+            "ballgowns",
+            "beading",
+            "being",
+            "black",
+            "blue",
+            "both",
+            "calanthe",
+            "capes",
+            "care",
+            "castle",
+            "category",
+            "ceilings",
+            "cersei",
+            "chambers",
+            "core",
+            "countess",
+            "country",
+            "creative",
+            "crowns",
+            "daggers",
+            "dark",
+            "deep",
+            "diana",
+            "directly",
+            "draws",
+            "duty",
+            "elegance"
+          ]
+        },
+        {
+          "name": "Goth",
+          "score": 0.7516,
+          "description": "Goth is a music-based subculture that emerged in the United Kingdom between 1978 and 1982 as a darker and more atmospheric evolution of Post-Punk. While initially nameless or referred to by the press as \"Positive Punk,\" ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7875,
+          "keywords": [
+            "1978",
+            "1982",
+            "19th",
+            "2014",
+            "2023",
+            "academia",
+            "accents",
+            "alternative",
+            "androgynous",
+            "anti",
+            "around",
+            "art",
+            "atmospheric",
+            "attire",
+            "bass",
+            "between",
+            "black",
+            "bontje",
+            "broader",
+            "century",
+            "characterized",
+            "clothing",
+            "coalesced",
+            "combined",
+            "conformity",
+            "convergent",
+            "creativity",
+            "crimson",
+            "cybergoth",
+            "dark",
+            "darker",
+            "darkest"
+          ]
+        },
+        {
+          "name": "TechnoNeko2000",
+          "score": 0.7511,
+          "description": "TechnoNeko2000 is an aesthetic that retrospectively encompasses the visual culture of the early YouTube and Niconico anime communities from the mid 2000s to early 2010s. It is characterized by a \"moe-futuristic\" style th",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.7867,
+          "keywords": [
+            "2000s",
+            "2010s",
+            "abstract",
+            "aero",
+            "amateur",
+            "angel",
+            "anime",
+            "animecore",
+            "anthropomorphized",
+            "archetype",
+            "art",
+            "black",
+            "blue",
+            "bubblegum",
+            "bulky",
+            "cables",
+            "catgirl",
+            "channels",
+            "character",
+            "characterized",
+            "coined",
+            "common",
+            "communities",
+            "components",
+            "compound",
+            "computer",
+            "consumer",
+            "conventions",
+            "cyan",
+            "dance",
+            "descriptive",
+            "design"
+          ]
+        }
+      ],
+      "genome": {
+        "black handle silver": 0.0625,
+        "handle silver blade": 0.0625,
+        "sword black handle": 0.0625,
+        "blade": 0.0625,
+        "handle": 0.0625,
+        "person": 0.0625,
+        "sword": 0.0625,
+        "black": 0.0625,
+        "silver": 0.0625,
+        "balanced": 0.0417,
+        "dramatic contrast": 0.0417,
+        "negative space": 0.0417,
+        "verticality": 0.0417,
+        "coldness": 0.0417,
+        "softness": 0.0417,
+        "devotion": 0.0417,
+        "suspense": 0.0417,
+        "warmth": 0.0417
+      },
+      "palette": [
+        {
+          "name": "Oslo Gray",
+          "hex": "#878d8e",
+          "rgb": [
+            135,
+            141,
+            142
+          ],
+          "weight": 0.215
+        },
+        {
+          "name": "Silver Gray",
+          "hex": "#b2b7ba",
+          "rgb": [
+            178,
+            183,
+            186
+          ],
+          "weight": 0.193
+        },
+        {
+          "name": "Loblolly",
+          "hex": "#c3cbd0",
+          "rgb": [
+            195,
+            203,
+            208
+          ],
+          "weight": 0.1639
+        },
+        {
+          "name": "Vulcan",
+          "hex": "#0b131d",
+          "rgb": [
+            11,
+            19,
+            29
+          ],
+          "weight": 0.1541
+        },
+        {
+          "name": "Mine Shaft",
+          "hex": "#323537",
+          "rgb": [
+            50,
+            53,
+            55
+          ],
+          "weight": 0.138
+        },
+        {
+          "name": "Geyser",
+          "hex": "#d9e1e8",
+          "rgb": [
+            217,
+            225,
+            232
+          ],
+          "weight": 0.136
+        }
+      ],
+      "scores": {
+        "purity": 0.6817,
+        "purityScore": 0.6817,
+        "latentPurity": 0.8954,
+        "spectralPurity": 0.2665,
+        "harmonicity": 0.2503,
+        "harmonyCoherence": 0.2503,
+        "hybridation": 0.3183,
+        "clusterCohesion": 1.0,
+        "clusterSeparation": 1.0,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.7801,
+        "styleCoherence": 1.0,
+        "affectCoherence": 1.0,
+        "symbolicCoherence": 0.5806,
+        "emotionalCoherence": 0.25,
+        "compositionCoherence": 1.0
+      },
+      "modalities": {
+        "image": 1,
+        "color": 6,
+        "emotion": 4,
+        "object": 4,
+        "symbol": 6,
+        "style": 3,
+        "affect": 1,
+        "composition": 3,
+        "aesthetic": 5
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 1.0,
+          "concepts": [
+            "sword black handle",
+            "handle silver blade",
+            "black handle silver",
+            "balanced",
+            "sword",
+            "person"
+          ]
+        }
+      ]
+    },
+    "fa6f9c4daf3e6b06": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "fa6f9c4daf3e6b06",
+      "created": 1779993458.5948951,
+      "imageCount": 3,
+      "dominantAesthetic": {
+        "name": "Y2K Futurism",
+        "score": 0.8849,
+        "description": "Y2K Futurism, also known by terms such as Cyber Y2K and originally as the Y2K Aesthetic, is an aesthetic that was prevalent in technology, music, and design from roughly 1997 to 2004. It succeeded the more analog styles ",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8336,
+        "keywords": [
+          "1990s",
+          "1997",
+          "2000",
+          "2000s",
+          "2004",
+          "2008",
+          "90s",
+          "abstract",
+          "accents",
+          "advancements",
+          "advancing",
+          "aero",
+          "analog",
+          "apple",
+          "approx",
+          "black",
+          "blobby",
+          "blobitecture",
+          "blobs",
+          "blue",
+          "blues",
+          "boom",
+          "bright",
+          "bubblegum",
+          "cari",
+          "characterized",
+          "chrome",
+          "chromecore",
+          "clean",
+          "club",
+          "com",
+          "common"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Y2K Futurism",
+          "score": 0.8849,
+          "description": "Y2K Futurism, also known by terms such as Cyber Y2K and originally as the Y2K Aesthetic, is an aesthetic that was prevalent in technology, music, and design from roughly 1997 to 2004. It succeeded the more analog styles ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8336,
+          "keywords": [
+            "1990s",
+            "1997",
+            "2000",
+            "2000s",
+            "2004",
+            "2008",
+            "90s",
+            "abstract",
+            "accents",
+            "advancements",
+            "advancing",
+            "aero",
+            "analog",
+            "apple",
+            "approx",
+            "black",
+            "blobby",
+            "blobitecture",
+            "blobs",
+            "blue",
+            "blues",
+            "boom",
+            "bright",
+            "bubblegum",
+            "cari",
+            "characterized",
+            "chrome",
+            "chromecore",
+            "clean",
+            "club",
+            "com",
+            "common"
+          ]
+        },
+        {
+          "name": "Catholic Horror",
+          "score": 0.8824,
+          "description": "Catholic Horror (better known as Religious Horror While the term \"Religious Horror\" could technically encompass horror derived from various religious systems, the vast majority of examples center on Catholic themes and i",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8299,
+          "keywords": [
+            "1960s",
+            "1968",
+            "architectural",
+            "architecture",
+            "associated",
+            "baby",
+            "better",
+            "between",
+            "black",
+            "blood",
+            "blue",
+            "candles",
+            "cathedrals",
+            "catholic",
+            "catholicism",
+            "center",
+            "church",
+            "cinema",
+            "cited",
+            "conflict",
+            "could",
+            "countries",
+            "creepy",
+            "cross",
+            "crosses",
+            "crucifixes",
+            "cultural",
+            "dark",
+            "darkness",
+            "death",
+            "demonic",
+            "depictions"
+          ]
+        },
+        {
+          "name": "Romantic Goth",
+          "score": 0.8816,
+          "description": "Romantic Goth is a substyle of the Goth subculture that draws its primary aesthetic inspiration from the 19th-century Romantic movement, particularly the dark and melancholic themes of Gothic literature from authors like",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8285,
+          "keywords": [
+            "1990s",
+            "19th",
+            "90s",
+            "academia",
+            "allan",
+            "androgynous",
+            "artistic",
+            "austere",
+            "authors",
+            "bands",
+            "beauty",
+            "black",
+            "blue",
+            "born",
+            "burgundy",
+            "candelabras",
+            "castles",
+            "category",
+            "celtic",
+            "cemeteries",
+            "century",
+            "characterized",
+            "closely",
+            "corsetry",
+            "cuffs",
+            "dark",
+            "deep",
+            "defined",
+            "details",
+            "displayed",
+            "dramatic",
+            "draws"
+          ]
+        },
+        {
+          "name": "Angura Kei",
+          "score": 0.8811,
+          "description": "Angura Kei (アングラ系, literally \"underground style\") is a Japanese subculture derived from the experimental Angura Theater counterculture of the 1960s and 1970s. The term Angura is a contraction of the English word \"undergr",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8279,
+          "keywords": [
+            "1926",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1989",
+            "actively",
+            "andaaguraundo",
+            "angura",
+            "artists",
+            "avant",
+            "black",
+            "blood",
+            "born",
+            "bunka",
+            "central",
+            "circuses",
+            "city",
+            "clocks",
+            "codified",
+            "conservatism",
+            "contraction",
+            "contradictions",
+            "counterculture",
+            "creating",
+            "critique",
+            "cross",
+            "defined",
+            "deliberate",
+            "derived",
+            "directly",
+            "distorted",
+            "distortion"
+          ]
+        },
+        {
+          "name": "Kawaii Gamer",
+          "score": 0.8808,
+          "description": "Kawaii Gamer, also known as Pastel E-Girl or Gamer Girl, is a Westernized interpretation of kawaii. It is popular among gamers, Twitch streamers, and anime fans, reaching peak popularity in the late-2010s and during the ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8274,
+          "keywords": [
+            "2010s",
+            "accessible",
+            "actual",
+            "align",
+            "among",
+            "amount",
+            "anime",
+            "animecore",
+            "asian",
+            "black",
+            "blue",
+            "casual",
+            "cat",
+            "commerce",
+            "commercialization",
+            "covid",
+            "cozy",
+            "cutecore",
+            "cuteness",
+            "cybertwee",
+            "decor",
+            "dedicated",
+            "differs",
+            "doll",
+            "dream",
+            "drinks",
+            "due",
+            "during",
+            "ear",
+            "eyes",
+            "fans",
+            "fashion"
+          ]
+        },
+        {
+          "name": "Vampire",
+          "score": 0.8806,
+          "description": "The modern Vampire aesthetic is an archetype rooted in 19th-century Gothic literature, which transformed the monstrous figure of Balkan and Eastern European folklore into a symbol of aristocratic charm and dark romantici",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8271,
+          "keywords": [
+            "1819",
+            "1897",
+            "19th",
+            "20th",
+            "academia",
+            "adding",
+            "anachronistic",
+            "angst",
+            "anne",
+            "anti",
+            "archetype",
+            "aristocratic",
+            "association",
+            "attire",
+            "authors",
+            "balkan",
+            "bats",
+            "been",
+            "began",
+            "black",
+            "blend",
+            "blood",
+            "bram",
+            "but",
+            "castles",
+            "category",
+            "cemented",
+            "century",
+            "character",
+            "characterized",
+            "charm",
+            "cinematic"
+          ]
+        }
+      ],
+      "genome": {
+        "black": 0.0563,
+        "coldness": 0.0375,
+        "white": 0.0375,
+        "dark": 0.0312,
+        "dramatic contrast": 0.025,
+        "negative space": 0.025,
+        "high contrast": 0.0187,
+        "black handle silver": 0.0187,
+        "handle silver blade": 0.0187,
+        "sword black handle": 0.0187,
+        "blade": 0.0187,
+        "handle": 0.0187,
+        "person": 0.0187,
+        "sword": 0.0187,
+        "silver": 0.0187,
+        "white car garage": 0.0187,
+        "car": 0.0187,
+        "garage": 0.0187
+      },
+      "palette": [
+        {
+          "name": "Black",
+          "hex": "#000000",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "weight": 0.3406
+        },
+        {
+          "name": "Dodger Blue",
+          "hex": "#0391fd",
+          "rgb": [
+            9,
+            140,
+            252
+          ],
+          "weight": 0.0581
+        },
+        {
+          "name": "Mine Shaft",
+          "hex": "#2f2d29",
+          "rgb": [
+            48,
+            49,
+            47
+          ],
+          "weight": 0.0534
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "#063beb",
+          "rgb": [
+            4,
+            60,
+            242
+          ],
+          "weight": 0.0479
+        },
+        {
+          "name": "Oslo Gray",
+          "hex": "#878d8e",
+          "rgb": [
+            135,
+            141,
+            142
+          ],
+          "weight": 0.0368
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#161616",
+          "rgb": [
+            22,
+            22,
+            22
+          ],
+          "weight": 0.0355
+        },
+        {
+          "name": "Merlin",
+          "hex": "#413d37",
+          "rgb": [
+            65,
+            61,
+            55
+          ],
+          "weight": 0.0337
+        },
+        {
+          "name": "Silver Gray",
+          "hex": "#b2b7ba",
+          "rgb": [
+            178,
+            183,
+            186
+          ],
+          "weight": 0.033
+        },
+        {
+          "name": "Iron",
+          "hex": "#d1d1d1",
+          "rgb": [
+            209,
+            209,
+            209
+          ],
+          "weight": 0.0328
+        },
+        {
+          "name": "Cloudy",
+          "hex": "#aea7a2",
+          "rgb": [
+            174,
+            167,
+            162
+          ],
+          "weight": 0.0325
+        },
+        {
+          "name": "Schooner",
+          "hex": "#8b837a",
+          "rgb": [
+            139,
+            131,
+            122
+          ],
+          "weight": 0.0325
+        },
+        {
+          "name": "White",
+          "hex": "#ffffff",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "weight": 0.0312
+        }
+      ],
+      "scores": {
+        "purity": 0.5016,
+        "purityScore": 0.5016,
+        "latentPurity": 0.5973,
+        "spectralPurity": 0.2274,
+        "harmonicity": 0.2133,
+        "harmonyCoherence": 0.2133,
+        "hybridation": 0.4984,
+        "clusterCohesion": 0.8775,
+        "clusterSeparation": 0.4958,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.4286,
+        "styleCoherence": 0.3636,
+        "affectCoherence": 0.6,
+        "symbolicCoherence": 0.2857,
+        "emotionalCoherence": 0.3,
+        "compositionCoherence": 0.7305
+      },
+      "modalities": {
+        "image": 3,
+        "color": 21,
+        "emotion": 6,
+        "object": 6,
+        "symbol": 21,
+        "style": 14,
+        "affect": 5,
+        "composition": 6,
+        "aesthetic": 5
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.3333,
+          "concepts": [
+            "white car garage",
+            "sacred",
+            "luminous",
+            "garage",
+            "car",
+            "black"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.6667,
+          "concepts": [
+            "black",
+            "soft focus",
+            "minimal",
+            "high contrast",
+            "dark",
+            "sword black handle"
+          ]
+        }
+      ]
+    },
+    "58d6a0e7379d508a": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "58d6a0e7379d508a",
+      "created": 1779993565.062648,
+      "imageCount": 12,
+      "dominantAesthetic": {
+        "name": "Neo-Aero",
+        "score": 0.8904,
+        "description": "Neo-Aero, also known as Neo-Frutiger Aero or Frutiger Aero Revival, is a contemporary digital aesthetic that romanticizes and deliberately exaggerates the visual language of the original Frutiger Aero design trend (c. 20",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8421,
+        "keywords": [
+          "1522646491",
+          "2004",
+          "2013",
+          "2020s",
+          "aero",
+          "after",
+          "album",
+          "apple",
+          "applied",
+          "approximately",
+          "art",
+          "associated",
+          "began",
+          "blue",
+          "bright",
+          "bubbles",
+          "characters",
+          "chrome",
+          "cited",
+          "clarity",
+          "cleancore",
+          "clouds",
+          "collins",
+          "comfort",
+          "consciousness",
+          "contemporary",
+          "corporate",
+          "covers",
+          "cycle",
+          "deliberately",
+          "design",
+          "digital"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Neo-Aero",
+          "score": 0.8904,
+          "description": "Neo-Aero, also known as Neo-Frutiger Aero or Frutiger Aero Revival, is a contemporary digital aesthetic that romanticizes and deliberately exaggerates the visual language of the original Frutiger Aero design trend (c. 20",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8421,
+          "keywords": [
+            "1522646491",
+            "2004",
+            "2013",
+            "2020s",
+            "aero",
+            "after",
+            "album",
+            "apple",
+            "applied",
+            "approximately",
+            "art",
+            "associated",
+            "began",
+            "blue",
+            "bright",
+            "bubbles",
+            "characters",
+            "chrome",
+            "cited",
+            "clarity",
+            "cleancore",
+            "clouds",
+            "collins",
+            "comfort",
+            "consciousness",
+            "contemporary",
+            "corporate",
+            "covers",
+            "cycle",
+            "deliberately",
+            "design",
+            "digital"
+          ]
+        },
+        {
+          "name": "Decopunk",
+          "score": 0.8898,
+          "description": "Decopunk, also known as Ottensian Dieselpunk, is a subset of the -punk sci-fi genres (specifically Dieselpunk), centered around the Art Deco and Streamline Moderne art styles of the 1910s to 1940s. It has a sleeker and s",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8412,
+          "keywords": [
+            "1910s",
+            "1940s",
+            "around",
+            "art",
+            "atompunk",
+            "bioshock",
+            "black",
+            "book",
+            "but",
+            "centered",
+            "circles",
+            "city",
+            "classically",
+            "common",
+            "compared",
+            "dark",
+            "deco",
+            "decopunk",
+            "definitely",
+            "dieselpunk",
+            "does",
+            "draw",
+            "dresses",
+            "elements",
+            "end",
+            "evoke",
+            "example",
+            "expect",
+            "factory",
+            "fashion",
+            "fashionable",
+            "find"
+          ]
+        },
+        {
+          "name": "Sepia Blur",
+          "score": 0.889,
+          "description": "Sepia Blur, also known as Sepia Burning, Sepia Sky, or VH1 Sepia Sky, was an aesthetic of the late 1980s to 1990s that primarily focused on a vintage grainy design which grew in popularity after the success of the grunge",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.84,
+          "keywords": [
+            "00s",
+            "1522646491",
+            "1800s",
+            "1900s",
+            "1980s",
+            "1990s",
+            "90s",
+            "across",
+            "adbfbb",
+            "adirondack",
+            "affected",
+            "after",
+            "airbrushed",
+            "album",
+            "angel",
+            "artists",
+            "aspect",
+            "backbone",
+            "became",
+            "beige",
+            "bistre",
+            "blur",
+            "burning",
+            "cari",
+            "category",
+            "chiaroscuro",
+            "city",
+            "coffeehouse",
+            "coined",
+            "collins",
+            "colours",
+            "computer"
+          ]
+        },
+        {
+          "name": "Soft Grunge",
+          "score": 0.8887,
+          "description": "Soft Grunge or Pale Grunge is an aesthetic based on simple photos with a color palette primarily consisting of white, grey, black, green, and blue. The aesthetic is believed to have appeared on Tumblr between 2013 and 20",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8395,
+          "keywords": [
+            "2010s",
+            "2013",
+            "2014",
+            "2015",
+            "2018",
+            "2020",
+            "21247938",
+            "aliens",
+            "alternative",
+            "appeared",
+            "approximately",
+            "attitude",
+            "because",
+            "believed",
+            "between",
+            "black",
+            "blue",
+            "brat",
+            "bright",
+            "calling",
+            "category",
+            "cheerful",
+            "close",
+            "com",
+            "connected",
+            "consisting",
+            "contrast",
+            "declined",
+            "desire",
+            "despite",
+            "developed",
+            "due"
+          ]
+        },
+        {
+          "name": "Romantic Goth",
+          "score": 0.8886,
+          "description": "Romantic Goth is a substyle of the Goth subculture that draws its primary aesthetic inspiration from the 19th-century Romantic movement, particularly the dark and melancholic themes of Gothic literature from authors like",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8394,
+          "keywords": [
+            "1990s",
+            "19th",
+            "90s",
+            "academia",
+            "allan",
+            "androgynous",
+            "artistic",
+            "austere",
+            "authors",
+            "bands",
+            "beauty",
+            "black",
+            "blue",
+            "born",
+            "burgundy",
+            "candelabras",
+            "castles",
+            "category",
+            "celtic",
+            "cemeteries",
+            "century",
+            "characterized",
+            "closely",
+            "corsetry",
+            "cuffs",
+            "dark",
+            "deep",
+            "defined",
+            "details",
+            "displayed",
+            "dramatic",
+            "draws"
+          ]
+        },
+        {
+          "name": "Y2K Futurism",
+          "score": 0.8886,
+          "description": "Y2K Futurism, also known by terms such as Cyber Y2K and originally as the Y2K Aesthetic, is an aesthetic that was prevalent in technology, music, and design from roughly 1997 to 2004. It succeeded the more analog styles ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8393,
+          "keywords": [
+            "1990s",
+            "1997",
+            "2000",
+            "2000s",
+            "2004",
+            "2008",
+            "90s",
+            "abstract",
+            "accents",
+            "advancements",
+            "advancing",
+            "aero",
+            "analog",
+            "apple",
+            "approx",
+            "black",
+            "blobby",
+            "blobitecture",
+            "blobs",
+            "blue",
+            "blues",
+            "boom",
+            "bright",
+            "bubblegum",
+            "cari",
+            "characterized",
+            "chrome",
+            "chromecore",
+            "clean",
+            "club",
+            "com",
+            "common"
+          ]
+        }
+      ],
+      "genome": {
+        "negative space": 0.0407,
+        "dark": 0.0387,
+        "gothic": 0.0326,
+        "verticality": 0.0285,
+        "coldness": 0.0244,
+        "book": 0.0244,
+        "minimal": 0.0204,
+        "soft focus": 0.0204,
+        "techno-optimism": 0.0204,
+        "nocturnal": 0.0204,
+        "shadowed": 0.0204,
+        "black": 0.0183,
+        "dramatic contrast": 0.0163,
+        "softness": 0.0163,
+        "low key palette": 0.0163,
+        "mortality": 0.0163,
+        "white": 0.0122,
+        "existential dread": 0.0122
+      },
+      "palette": [
+        {
+          "name": "Black",
+          "hex": "#000000",
+          "rgb": [
+            2,
+            2,
+            2
+          ],
+          "weight": 0.1588
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#1c1f1d",
+          "rgb": [
+            28,
+            30,
+            31
+          ],
+          "weight": 0.0496
+        },
+        {
+          "name": "Fuscous Gray",
+          "hex": "#595246",
+          "rgb": [
+            83,
+            79,
+            72
+          ],
+          "weight": 0.0426
+        },
+        {
+          "name": "Moon Mist",
+          "hex": "#dbdcce",
+          "rgb": [
+            219,
+            220,
+            206
+          ],
+          "weight": 0.0347
+        },
+        {
+          "name": "Soya Bean",
+          "hex": "#666052",
+          "rgb": [
+            97,
+            91,
+            77
+          ],
+          "weight": 0.0249
+        },
+        {
+          "name": "Mine Shaft",
+          "hex": "#2f2d29",
+          "rgb": [
+            49,
+            49,
+            49
+          ],
+          "weight": 0.0236
+        },
+        {
+          "name": "Bunker",
+          "hex": "#030b12",
+          "rgb": [
+            13,
+            16,
+            21
+          ],
+          "weight": 0.0202
+        },
+        {
+          "name": "Friar Gray",
+          "hex": "#7b7c75",
+          "rgb": [
+            125,
+            124,
+            115
+          ],
+          "weight": 0.0188
+        },
+        {
+          "name": "Birch",
+          "hex": "#342d22",
+          "rgb": [
+            57,
+            50,
+            37
+          ],
+          "weight": 0.0186
+        },
+        {
+          "name": "Delta",
+          "hex": "#a2a5a1",
+          "rgb": [
+            163,
+            166,
+            161
+          ],
+          "weight": 0.0186
+        },
+        {
+          "name": "Woodsmoke",
+          "hex": "#080f12",
+          "rgb": [
+            13,
+            16,
+            18
+          ],
+          "weight": 0.0186
+        },
+        {
+          "name": "Dodger Blue",
+          "hex": "#0391fd",
+          "rgb": [
+            9,
+            140,
+            252
+          ],
+          "weight": 0.0179
+        }
+      ],
+      "scores": {
+        "purity": 0.4156,
+        "purityScore": 0.4156,
+        "latentPurity": 0.4282,
+        "spectralPurity": 0.2506,
+        "harmonicity": 0.2422,
+        "harmonyCoherence": 0.2422,
+        "hybridation": 0.5844,
+        "clusterCohesion": 0.8746,
+        "clusterSeparation": 0.5172,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.312,
+        "styleCoherence": 0.3111,
+        "affectCoherence": 0.4286,
+        "symbolicCoherence": 0.2683,
+        "emotionalCoherence": 0.2069,
+        "compositionCoherence": 0.5351
+      },
+      "modalities": {
+        "image": 12,
+        "color": 67,
+        "emotion": 6,
+        "object": 9,
+        "symbol": 35,
+        "texture": 10,
+        "style": 14,
+        "affect": 12,
+        "composition": 6,
+        "aesthetic": 5
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.25,
+          "concepts": [
+            "soft focus",
+            "minimal",
+            "balanced",
+            "high contrast",
+            "sword black handle",
+            "handle silver blade"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.25,
+          "concepts": [
+            "techno-optimism",
+            "dark",
+            "black",
+            "white",
+            "high contrast",
+            "shadowed"
+          ]
+        },
+        {
+          "id": 2,
+          "share": 0.25,
+          "concepts": [
+            "gothic",
+            "dark",
+            "low key palette",
+            "shadowed",
+            "nocturnal",
+            "soft focus"
+          ]
+        },
+        {
+          "id": 3,
+          "share": 0.25,
+          "concepts": [
+            "soft focus",
+            "minimal",
+            "mortality",
+            "gothic",
+            "dark",
+            "foggy"
+          ]
+        }
+      ]
+    },
+    "0f2029ba809e7871": {
+      "schemaVersion": "aesthetic-world-sample-v1",
+      "id": "0f2029ba809e7871",
+      "created": 1779993856.721486,
+      "imageCount": 3,
+      "dominantAesthetic": {
+        "name": "Y2K Futurism",
+        "score": 0.8849,
+        "description": "Y2K Futurism, also known by terms such as Cyber Y2K and originally as the Y2K Aesthetic, is an aesthetic that was prevalent in technology, music, and design from roughly 1997 to 2004. It succeeded the more analog styles ",
+        "source": "Aesthetics Wiki",
+        "vectorScore": 0.8336,
+        "keywords": [
+          "1990s",
+          "1997",
+          "2000",
+          "2000s",
+          "2004",
+          "2008",
+          "90s",
+          "abstract",
+          "accents",
+          "advancements",
+          "advancing",
+          "aero",
+          "analog",
+          "apple",
+          "approx",
+          "black",
+          "blobby",
+          "blobitecture",
+          "blobs",
+          "blue",
+          "blues",
+          "boom",
+          "bright",
+          "bubblegum",
+          "cari",
+          "characterized",
+          "chrome",
+          "chromecore",
+          "clean",
+          "club",
+          "com",
+          "common"
+        ]
+      },
+      "aesthetics": [
+        {
+          "name": "Y2K Futurism",
+          "score": 0.8849,
+          "description": "Y2K Futurism, also known by terms such as Cyber Y2K and originally as the Y2K Aesthetic, is an aesthetic that was prevalent in technology, music, and design from roughly 1997 to 2004. It succeeded the more analog styles ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8336,
+          "keywords": [
+            "1990s",
+            "1997",
+            "2000",
+            "2000s",
+            "2004",
+            "2008",
+            "90s",
+            "abstract",
+            "accents",
+            "advancements",
+            "advancing",
+            "aero",
+            "analog",
+            "apple",
+            "approx",
+            "black",
+            "blobby",
+            "blobitecture",
+            "blobs",
+            "blue",
+            "blues",
+            "boom",
+            "bright",
+            "bubblegum",
+            "cari",
+            "characterized",
+            "chrome",
+            "chromecore",
+            "clean",
+            "club",
+            "com",
+            "common"
+          ]
+        },
+        {
+          "name": "Catholic Horror",
+          "score": 0.8824,
+          "description": "Catholic Horror (better known as Religious Horror While the term \"Religious Horror\" could technically encompass horror derived from various religious systems, the vast majority of examples center on Catholic themes and i",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8299,
+          "keywords": [
+            "1960s",
+            "1968",
+            "architectural",
+            "architecture",
+            "associated",
+            "baby",
+            "better",
+            "between",
+            "black",
+            "blood",
+            "blue",
+            "candles",
+            "cathedrals",
+            "catholic",
+            "catholicism",
+            "center",
+            "church",
+            "cinema",
+            "cited",
+            "conflict",
+            "could",
+            "countries",
+            "creepy",
+            "cross",
+            "crosses",
+            "crucifixes",
+            "cultural",
+            "dark",
+            "darkness",
+            "death",
+            "demonic",
+            "depictions"
+          ]
+        },
+        {
+          "name": "Romantic Goth",
+          "score": 0.8816,
+          "description": "Romantic Goth is a substyle of the Goth subculture that draws its primary aesthetic inspiration from the 19th-century Romantic movement, particularly the dark and melancholic themes of Gothic literature from authors like",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8285,
+          "keywords": [
+            "1990s",
+            "19th",
+            "90s",
+            "academia",
+            "allan",
+            "androgynous",
+            "artistic",
+            "austere",
+            "authors",
+            "bands",
+            "beauty",
+            "black",
+            "blue",
+            "born",
+            "burgundy",
+            "candelabras",
+            "castles",
+            "category",
+            "celtic",
+            "cemeteries",
+            "century",
+            "characterized",
+            "closely",
+            "corsetry",
+            "cuffs",
+            "dark",
+            "deep",
+            "defined",
+            "details",
+            "displayed",
+            "dramatic",
+            "draws"
+          ]
+        },
+        {
+          "name": "Angura Kei",
+          "score": 0.8811,
+          "description": "Angura Kei (アングラ系, literally \"underground style\") is a Japanese subculture derived from the experimental Angura Theater counterculture of the 1960s and 1970s. The term Angura is a contraction of the English word \"undergr",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8279,
+          "keywords": [
+            "1926",
+            "1950s",
+            "1960s",
+            "1970s",
+            "1989",
+            "actively",
+            "andaaguraundo",
+            "angura",
+            "artists",
+            "avant",
+            "black",
+            "blood",
+            "born",
+            "bunka",
+            "central",
+            "circuses",
+            "city",
+            "clocks",
+            "codified",
+            "conservatism",
+            "contraction",
+            "contradictions",
+            "counterculture",
+            "creating",
+            "critique",
+            "cross",
+            "defined",
+            "deliberate",
+            "derived",
+            "directly",
+            "distorted",
+            "distortion"
+          ]
+        },
+        {
+          "name": "Kawaii Gamer",
+          "score": 0.8808,
+          "description": "Kawaii Gamer, also known as Pastel E-Girl or Gamer Girl, is a Westernized interpretation of kawaii. It is popular among gamers, Twitch streamers, and anime fans, reaching peak popularity in the late-2010s and during the ",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8274,
+          "keywords": [
+            "2010s",
+            "accessible",
+            "actual",
+            "align",
+            "among",
+            "amount",
+            "anime",
+            "animecore",
+            "asian",
+            "black",
+            "blue",
+            "casual",
+            "cat",
+            "commerce",
+            "commercialization",
+            "covid",
+            "cozy",
+            "cutecore",
+            "cuteness",
+            "cybertwee",
+            "decor",
+            "dedicated",
+            "differs",
+            "doll",
+            "dream",
+            "drinks",
+            "due",
+            "during",
+            "ear",
+            "eyes",
+            "fans",
+            "fashion"
+          ]
+        },
+        {
+          "name": "Vampire",
+          "score": 0.8806,
+          "description": "The modern Vampire aesthetic is an archetype rooted in 19th-century Gothic literature, which transformed the monstrous figure of Balkan and Eastern European folklore into a symbol of aristocratic charm and dark romantici",
+          "source": "Aesthetics Wiki",
+          "vectorScore": 0.8271,
+          "keywords": [
+            "1819",
+            "1897",
+            "19th",
+            "20th",
+            "academia",
+            "adding",
+            "anachronistic",
+            "angst",
+            "anne",
+            "anti",
+            "archetype",
+            "aristocratic",
+            "association",
+            "attire",
+            "authors",
+            "balkan",
+            "bats",
+            "been",
+            "began",
+            "black",
+            "blend",
+            "blood",
+            "bram",
+            "but",
+            "castles",
+            "category",
+            "cemented",
+            "century",
+            "character",
+            "characterized",
+            "charm",
+            "cinematic"
+          ]
+        }
+      ],
+      "genome": {
+        "black": 0.0563,
+        "coldness": 0.0375,
+        "white": 0.0375,
+        "dark": 0.0312,
+        "dramatic contrast": 0.025,
+        "negative space": 0.025,
+        "high contrast": 0.0187,
+        "black handle silver": 0.0187,
+        "handle silver blade": 0.0187,
+        "sword black handle": 0.0187,
+        "blade": 0.0187,
+        "handle": 0.0187,
+        "person": 0.0187,
+        "sword": 0.0187,
+        "silver": 0.0187,
+        "white car garage": 0.0187,
+        "car": 0.0187,
+        "garage": 0.0187
+      },
+      "palette": [
+        {
+          "name": "Black",
+          "hex": "#000000",
+          "rgb": [
+            0,
+            0,
+            0
+          ],
+          "weight": 0.3406
+        },
+        {
+          "name": "Dodger Blue",
+          "hex": "#0391fd",
+          "rgb": [
+            9,
+            140,
+            252
+          ],
+          "weight": 0.0581
+        },
+        {
+          "name": "Mine Shaft",
+          "hex": "#2f2d29",
+          "rgb": [
+            48,
+            49,
+            47
+          ],
+          "weight": 0.0534
+        },
+        {
+          "name": "Dark Blue",
+          "hex": "#063beb",
+          "rgb": [
+            4,
+            60,
+            242
+          ],
+          "weight": 0.0479
+        },
+        {
+          "name": "Oslo Gray",
+          "hex": "#878d8e",
+          "rgb": [
+            135,
+            141,
+            142
+          ],
+          "weight": 0.0368
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#161616",
+          "rgb": [
+            22,
+            22,
+            22
+          ],
+          "weight": 0.0355
+        },
+        {
+          "name": "Merlin",
+          "hex": "#413d37",
+          "rgb": [
+            65,
+            61,
+            55
+          ],
+          "weight": 0.0337
+        },
+        {
+          "name": "Silver Gray",
+          "hex": "#b2b7ba",
+          "rgb": [
+            178,
+            183,
+            186
+          ],
+          "weight": 0.033
+        },
+        {
+          "name": "Iron",
+          "hex": "#d1d1d1",
+          "rgb": [
+            209,
+            209,
+            209
+          ],
+          "weight": 0.0328
+        },
+        {
+          "name": "Cloudy",
+          "hex": "#aea7a2",
+          "rgb": [
+            174,
+            167,
+            162
+          ],
+          "weight": 0.0325
+        },
+        {
+          "name": "Schooner",
+          "hex": "#8b837a",
+          "rgb": [
+            139,
+            131,
+            122
+          ],
+          "weight": 0.0325
+        },
+        {
+          "name": "White",
+          "hex": "#ffffff",
+          "rgb": [
+            255,
+            255,
+            255
+          ],
+          "weight": 0.0312
+        }
+      ],
+      "scores": {
+        "purity": 0.5016,
+        "purityScore": 0.5016,
+        "latentPurity": 0.5973,
+        "spectralPurity": 0.2274,
+        "harmonicity": 0.2133,
+        "harmonyCoherence": 0.2133,
+        "hybridation": 0.4984,
+        "clusterCohesion": 0.8775,
+        "clusterSeparation": 0.4958,
+        "modalityCoverage": 1.0,
+        "colorCoherence": 0.4286,
+        "styleCoherence": 0.3636,
+        "affectCoherence": 0.6,
+        "symbolicCoherence": 0.2857,
+        "emotionalCoherence": 0.3,
+        "compositionCoherence": 0.7305
+      },
+      "modalities": {
+        "image": 3,
+        "color": 21,
+        "emotion": 6,
+        "object": 6,
+        "symbol": 21,
+        "style": 14,
+        "affect": 5,
+        "composition": 6,
+        "aesthetic": 5
+      },
+      "embeddingPolicy": {
+        "visual": "google/siglip2-base-patch16-224",
+        "fusion": "weighted modality text embeddings + visual embedding",
+        "schema": "aesthetic-world-sample-v1"
+      },
+      "clusters": [
+        {
+          "id": 0,
+          "share": 0.3333,
+          "concepts": [
+            "white car garage",
+            "sacred",
+            "luminous",
+            "garage",
+            "car",
+            "black"
+          ]
+        },
+        {
+          "id": 1,
+          "share": 0.6667,
+          "concepts": [
+            "black",
+            "soft focus",
+            "minimal",
+            "high contrast",
+            "dark",
+            "sword black handle"
+          ]
+        }
+      ]
     }
   },
-  "updated": 1779986980.401087,
+  "updated": 1779993856.728404,
   "modelVersion": "mvp-lite-world-model-harmony-v23"
 }

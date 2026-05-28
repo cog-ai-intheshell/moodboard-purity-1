@@ -154,10 +154,14 @@
         var min = Number(input.min || 0);
         var max = Number(input.max || 100);
         var value = Number(input.value || 0);
-        var progress = ((value - min) / (max - min)) * 100;
+        var progress = max === min ? 100 : ((value - min) / (max - min)) * 100;
         input.style.setProperty("--range-progress", progress + "%");
         var output = document.getElementById(input.id + "Value");
-        if (output) output.value = displayValue === undefined ? formatRangeValue(input) : String(displayValue);
+        if (output) {
+          var valueText = displayValue === undefined ? formatRangeValue(input) : String(displayValue);
+          output.value = valueText;
+          output.textContent = valueText;
+        }
       }
 
       function updatePresetFields() {
@@ -235,6 +239,24 @@
         return perPage;
       }
 
+      function imagesPerPageMaxForLayout() {
+        var layout = document.getElementById("layoutMode").value;
+        if (layout === "grid" || layout === "random") return 12;
+        if (layout === "custom") return Math.max(1, customSlotCount());
+        return 30;
+      }
+
+      function syncImagesPerPageControlBounds() {
+        var input = document.getElementById("imagesPerPage");
+        var max = imagesPerPageMaxForLayout();
+        input.max = String(max);
+        if (!document.getElementById("bentoOptimizer").checked && Number(input.value) > max) {
+          input.value = String(max);
+          manualImagesPerPage = max;
+        }
+        updateRange(input);
+      }
+
       function syncImagesPerPageDisplay(perPage) {
         var input = document.getElementById("imagesPerPage");
         var outputValue = Math.max(0, Math.round(Number(perPage) || 0));
@@ -247,6 +269,7 @@
       }
 
       function updateMetrics(pageCount, perPageOverride) {
+        syncImagesPerPageControlBounds();
         var optimizer = document.getElementById("bentoOptimizer").checked;
         var selectedPerPage = Number(document.getElementById("imagesPerPage").value);
         var generatedPerPage = optimizer ? optimizerImagesPerPageEstimate() : selectedPerPage;
